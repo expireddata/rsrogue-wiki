@@ -18,12 +18,16 @@ whole team. Each kind is rolled independently:
 | Trader's lamps | 35% | Each worth a bloody key chest lamp |
 | Supplies | 80% | 3-5 of prayer potions, Saradomin brews, super restores, blighted overloads, ambrosia, and a stack of lobsters, swordfish or sharks |
 | Gear | 70% | 3-6 random pieces from the chest gear list, whether or not you can wear them |
+| Gear upgrades | 60% | 1-2 each of 2-3 of the world's boss tier catalyst and stones (see [Gear upgrades](#/upgrades)) |
 
-It always sells something. Gear costs 3x what the trader pays for it.
+It always sells something. Gear costs 3x what the trader pays for it. Upgrades cost 20 (bronze) to
+330 (dragon) blood money.
+
+The trader buys upgraded gear too, but its upgrades are lost once you have none of it left.
 
 ## The looting bag
 
 Every run starts with a looting bag. Use an item on it to put it in (one item, or a whole ammo
-stack), but only items the trader buys. **Nothing comes out.** Sell the bag to the trader to sell
+stack), but only items the trader buys, and never upgraded gear. **Nothing comes out.** Sell the bag to the trader to sell
 everything inside at once. You get the empty bag back. Destroying it loses its contents, and it can't
 be dropped.

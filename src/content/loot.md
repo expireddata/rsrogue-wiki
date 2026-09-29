@@ -10,6 +10,7 @@ Every npc that dies in an arena rolls its drops. Equipment, food, bones and keys
 | Bones | 50% | Scale with the npc's loot level |
 | Bloody key | 12% | Opens chests, favours xp and common modifiers |
 | Bloodier key | 3% | Favours rare modifiers, gear and bigger lamps |
+| Gear upgrade | 6% | A catalyst or stone, bronze to adamant by loot level (see [Gear upgrades](#/upgrades)) |
 
 ## Equipment
 
@@ -30,8 +31,10 @@ Bones, big bones, babydragon bones and dragon bones, by loot level.
 
 ## Boss drops
 
-A boss drops 3 pieces of equipment and 3 solid food of a tier set by danger level and world, plus a
-guaranteed **bloodier key**, and each member gets a 35k xp lamp.
+A boss drops 3 pieces of equipment and 3 solid food of a tier set by danger level and world, and
+each member gets a 35k xp lamp. Every member also gets their own share, dropped under them: a
+**bloodier key**, a catalyst, an offensive stone and a defensive stone (steel in world 1, one tier
+better each world). A dead teammate's share drops where the boss died, for the team.
 
 ## Loot modifiers
 

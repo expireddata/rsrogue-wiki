@@ -43,7 +43,8 @@ The Deserted Island and Wild Varrock come with their own chests. Every other map
 one) gets chests placed at the start of each world, bunched into pockets of 3 to 6, indoors if the
 map has any. **Supply crates** (5 per world, "Search", no key needed) give 3 rolls each: a
 1-in-100 arcane grimoire, 1-in-50 prayer unlocks (Preserve, Chivalry, Piety, Rigour, Augury),
-1-in-20 a supply lamp (1k xp), otherwise a modifier or gear, never xp.
+1-in-20 a supply lamp (1k xp), otherwise gear or a [gear upgrade](#/upgrades), never xp. Crates
+never give modifiers: those are always your pick from a key chest.
 
 ## How gear is chosen
 

@@ -5,6 +5,7 @@ import Overview from "./content/overview.md?raw";
 import Director from "./content/director.md?raw";
 import Loot from "./content/loot.md?raw";
 import Trader from "./content/trader.md?raw";
+import Upgrades from "./content/upgrades.md?raw";
 import Capes from "./content/capes.md?raw";
 import Collection from "./content/collection.md?raw";
 import Tips from "./content/tips.md?raw";
@@ -23,6 +24,7 @@ const nav: { to: string; label: string; group: string }[] = [
   { to: "/loot", label: "Loot & food", group: "Items" },
   { to: "/chests", label: "Chests & gear", group: "Items" },
   { to: "/modifiers", label: "Modifiers", group: "Items" },
+  { to: "/upgrades", label: "Gear upgrades & life points", group: "Items" },
   { to: "/trader", label: "Trader & looting bag", group: "Items" },
   { to: "/capes", label: "Skill capes", group: "Items" },
   { to: "/achievements", label: "Combat achievements", group: "Progression" },
@@ -78,6 +80,7 @@ export default function App() {
           <Route path="/loot" element={<Md>{Loot}</Md>} />
           <Route path="/chests" element={<Chests />} />
           <Route path="/modifiers" element={<Modifiers />} />
+          <Route path="/upgrades" element={<Md>{Upgrades}</Md>} />
           <Route path="/trader" element={<Md>{Trader}</Md>} />
           <Route path="/capes" element={<Md>{Capes}</Md>} />
           <Route path="/achievements" element={<Achievements />} />

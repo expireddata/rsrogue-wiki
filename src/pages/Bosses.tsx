@@ -76,8 +76,9 @@ Every world ends with a boss fight.
 3. Bosses are strong: their stats are cut down to a fraction of the real ones, then **scaled up by
    difficulty** and by team size, so later worlds and bigger teams are tougher.
 4. Defeat the boss and every other npc on the island dies. The director pauses, every member gets a
-   **35k xp lamp** (times their xp rate), and the boss drops 3 pieces of equipment, 3 solid food and
-   a guaranteed **bloodier key**. A **portal** and a **wandering trader** appear (see
+   **35k xp lamp** (times their xp rate), and the boss drops 3 pieces of equipment and 3 solid food.
+   Every member also gets a **bloodier key** and one of each [gear upgrade](#/upgrades), dropped
+   under them. A **portal** and a **wandering trader** appear (see
    [Trader](#/trader)). Enter the portal to take the whole team to the next world.
 
 Worlds 1-2 can summon TzTok-Jad, General Graardor, the Rabbit or Scurrius. From world 3, Nex

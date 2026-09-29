@@ -8,6 +8,8 @@
 - **Pick up keys.** Bloody keys (12% per kill) and bloodier keys (3%) open chests for
   [modifiers](#/modifiers), gear and xp.
 - **Search supply crates.** 5 per world, no key needed, and they speed up the early game.
+- **Upgrade your gear.** Catalysts and stones make a piece of gear stronger for the rest of the run,
+  and life point stones let your health go far past 99. See [Gear upgrades](#/upgrades).
 - **Bury bones** for Prayer xp. Prayer is what makes TzTok-Jad beatable.
 - **Explore.** Chests are bunched in pockets, and exploring the map is rewarded.
 
