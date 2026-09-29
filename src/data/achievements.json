@@ -445,7 +445,7 @@
     "tier": "Grandmaster",
     "type": "Perfection",
     "name": "Perfect Verzik",
-    "description": "Kill Verzik Vitur without anyone taking a hit while praying against the wrong style, being stomped or hit by a tornado, and without her leaving her tiles.",
+    "description": "Kill Verzik Vitur without anyone being hit by her magic or ranged unprotected, stomped or caught by a tornado, and without her leaving her tiles.",
     "reward": null,
     "boss": "Verzik"
   },

@@ -1,90 +1,120 @@
+import { Link } from "react-router-dom";
 import Md from "../Md";
 
 type Boss = {
   name: string;
-  from: string;
+  worlds: string;
+  hook: string;
+  hitpoints: number;
+  maxHits: string;
   attacks: string[];
-  tips: string;
+  howTo: string;
 };
 
+// Hitpoints and max hits at danger level 1, solo (see BossScaling and each boss's attack script).
 const bosses: Boss[] = [
   {
     name: "TzTok-Jad",
-    from: "World 1",
+    worlds: "Worlds 1-4",
+    hook: "Pray right or go home. His ranged and magic hit the whole team.",
+    hitpoints: 105,
+    maxHits: "97 melee and ranged, 95 magic",
     attacks: [
-      "Picks at random: magic or ranged at a distance, and melee, magic or ranged in melee reach.",
-      "Magic and ranged hit every player within 12 tiles, each with their own projectile. They land 3 cycles after the animation, like the Fight Caves, so you can switch protection prayers. Melee hits at once.",
+      "From a distance he picks magic or ranged. In melee reach he can also melee.",
+      "Magic and ranged hit **every player within 12 tiles**, each with their own roll.",
+      "They land **3 ticks after his animation**, like in the Fight Caves. Melee lands at once.",
     ],
-    tips: "Protection prayers block his attacks completely. Prayer is always the second skill offered by xp lamps for this reason.",
+    howTo:
+      "Stay out of melee reach so he can only use magic or ranged, then read his animation and switch prayer.",
   },
   {
     name: "General Graardor",
-    from: "World 1",
+    worlds: "Worlds 1-4",
+    hook: "Hits like a falling wall, if he ever reaches you.",
+    hitpoints: 77,
+    maxHits: "60 melee, 35 ranged",
     attacks: [
-      "Walks up and melees like any melee npc.",
-      "One attack in 3 is a ranged attack that hits every player within 10 tiles.",
+      "Walks up to his target and melees.",
+      "One attack in 3 is ranged instead, hitting **every player within 10 tiles**.",
     ],
-    tips: "He only attacks once he reaches his target, so kiting him means he never attacks at all.",
+    howTo:
+      "He only attacks once he's reached his target. Kite him and he never attacks at all, ranged included.",
   },
   {
     name: "The Rabbit",
-    from: "World 1",
-    attacks: ["Bites every 2 cycles for up to 20. Melee only."],
-    tips: "Shown as level 2 whatever its stats, and it has far less health than the other bosses. Do not underestimate it.",
+    worlds: "Worlds 1-4",
+    hook: "Level 2. Don't laugh.",
+    hitpoints: 120,
+    maxHits: "20 melee",
+    attacks: ["Bites every **2 ticks** for up to 20. That's it. It's enough."],
+    howTo:
+      "Protect from Melee blocks every bite. It has more hitpoints than Jad, so bring food in case your prayer runs dry.",
   },
   {
     name: "Scurrius",
-    from: "World 1",
+    worlds: "Worlds 1-4",
+    hook: "A rat the size of a house that never stops running at you.",
+    hitpoints: 120,
+    maxHits: "22 melee, 18 ranged and magic",
     attacks: [
       "Keeps running at his target while he attacks.",
-      "From a distance, a slow magic or ranged projectile at every player in range (10). Prayers are checked when it lands, so you can switch while it flies.",
-      "In melee reach, slams every player next to him.",
+      "From a distance: a slow magic or ranged projectile at **every player within 10 tiles**.",
+      "In melee reach: slams **every player next to him**.",
+      "Never flinches when hit.",
     ],
-    tips: "He has no defend animation, so he never flinches.",
+    howTo:
+      "Your prayer is checked when each projectile lands, so you have time to switch after you see which one he threw.",
   },
   {
     name: "Nex",
-    from: "World 3",
+    worlds: "Worlds 3-4",
+    hook: "Punishes teams that only know one style.",
+    hitpoints: 136,
+    maxHits: "30 melee and magic, 50 shadows",
     attacks: [
-      "Magic (a smoke cloud at every player in range) from a distance, melee or magic up close.",
-      "She protects against the last style that hit her, shown by an overhead prayer: hits of that style deal 0. She switches after each hit.",
-      "Every 4th attack is a special: Cough or Shadows.",
-      "Cough: infects a player, who coughs 5 times, lowering their combat stats a little each time. Every cough infects living members within 1 tile.",
-      "Shadows: a shadow appears under every player in range. 4 cycles later anyone still standing on one takes a big typeless hit.",
+      "From a distance: a smoke cloud at every player in range. Up close: melee or magic.",
+      "**Her prayer follows your damage.** She protects against the last style that hit her, and hits of that style deal 0. Her overhead shows which.",
+      "Every 4th attack is a special:",
+      "**Cough:** infects a player. They cough every 4 ticks, 5 times, losing a little Attack, Strength, Defence, Ranged and Magic each time. Each cough infects anyone within 1 tile.",
+      "**Shadows:** a shadow appears under every player in range. Anyone still on one 4 ticks later takes 25-50 damage that prayer can't block.",
     ],
-    tips: "Mix your attack styles to get around her prayer, spread out to avoid coughs and step off shadows.",
+    howTo:
+      "Alternate styles, spread out when someone coughs, and step off shadows the moment they appear.",
   },
   {
     name: "Verzik Vitur",
-    from: "World 5 (final)",
+    worlds: "World 5",
+    hook: "The final boss. Beat her and the run is won.",
+    hitpoints: 210,
+    maxHits: "40 magic and ranged, 25 stomp",
     attacks: [
-      "Magic or ranged at random at every player in range (10), a projectile that takes 3 cycles to land at any distance. Prayers are checked on impact.",
-      "If her target is in direct melee range, she stomps instead: a typeless hit on every living member that prayer does not block.",
-      "She walks at her target as she attacks, and can attack someone standing under her.",
-      "Below 20% hitpoints she sends a tornado after every living member. It walks to where you were standing, so a player who keeps moving is never caught.",
+      "Magic or ranged at **every player within 10 tiles**, landing 3 ticks later at any range. Prayer is checked when it lands.",
+      "If her target stands next to one of her sides, she **stomps** instead: a hit on the whole team that prayer can't block.",
+      "She walks at her target as she attacks, and can hit you while you stand under her.",
+      "**She only takes damage on her own floor.** Her summon tiles are marked with Theatre of Blood tiles. Drag her off them and every hit deals 0.",
+      "**Tornadoes** below 20% hitpoints: one chases every player, and a new one comes every 20 ticks for anyone without one. A tornado that catches you takes half your life points and heals her 3x that.",
     ],
-    tips: "Her summon tiles are marked with Theatre of Blood floor tiles. She takes 0 damage while she is off them. Defeating her completes the run.",
+    howTo:
+      "Keep her on her tiles and pray against her projectiles. In the last 20%, never stand still: tornadoes walk to where you were, so a moving target is never caught.",
   },
 ];
 
 const intro = `
-Every world ends with a boss fight.
+Every world ends in a boss fight, and you choose when it starts.
 
-1. A **summoning altar** is placed somewhere on the map. Use it (after a confirm) to summon a random
-   boss. Bones can be offered on it for 2.5x prayer xp, but only until the boss is summoned.
-2. A new boss waits **5 cycles** before its first attack, so you can back off and get ready.
-3. Bosses are strong: their stats are cut down to a fraction of the real ones, then **scaled up by
-   difficulty** and by team size, so later worlds and bigger teams are tougher.
-4. Defeat the boss and every other npc on the island dies. The director pauses, every member gets a
-   **35k xp lamp** (times their xp rate), and the boss drops 3 pieces of equipment and 3 solid food.
-   Every member also gets a **bloodier key** and one of each [gear upgrade](#/upgrades), dropped
-   under them. A **portal** and a **wandering trader** appear (see
-   [Trader](#/trader)). Enter the portal to take the whole team to the next world.
+1. **Find the altar.** Every map has a summoning altar somewhere. Offer bones on it first for
+   2.5x Prayer xp, because it disappears once you summon.
+2. **Summon.** A random boss appears (Verzik Vitur in world 5). It waits **5 ticks** before
+   attacking, so step back and set your prayers.
+3. **Kill it.** Every other monster on the map dies with it, and the danger clock stops.
+4. **Collect.** Each member gets a 3.5 million xp lamp at 100x, a bloodier key and three
+   [upgrade items](#/upgrades). A portal and a [wandering trader](#/trader) appear. Take the
+   portal when the whole team is ready: it moves everyone to the next world, and revives ghosts.
 
-Worlds 1-2 can summon TzTok-Jad, General Graardor, the Rabbit or Scurrius. From world 3, Nex
-joins the pool. **World 5** always summons Verzik Vitur, and beating her completes the run.
-
-Each boss has its own [combat achievements](#/achievements).
+Boss stats grow with the danger level at the moment you summon, and with your team size. The
+numbers below are at danger level 1 for a solo player. Hitpoints and max hits go up **55% per
+danger level** above that. Each extra teammate adds **50% hitpoints** and **10%** to max hits and
+accuracy.
 `;
 
 export default function Bosses() {
@@ -94,22 +124,41 @@ export default function Bosses() {
       <Md>{intro}</Md>
       <div className="cards">
         {bosses.map((b) => (
-          <div className="card boss" key={b.name}>
-            <div className="card-head static">
-              <span className="card-title">{b.name}</span>
-              <span className="tag">{b.from}</span>
+          <section className="card boss" key={b.name}>
+            <div className="boss-top">
+              <h2>{b.name}</h2>
+              <span className={"tag " + (b.worlds === "World 5" ? "blood" : "gold")}>{b.worlds}</span>
+              <p className="boss-quote">{b.hook}</p>
             </div>
-            <div className="card-body">
+            <div className="statline">
+              <div>
+                <b>{b.hitpoints}</b>
+                <span>Hitpoints</span>
+              </div>
+              <div style={{ flexGrow: 3 }}>
+                <b>{b.maxHits}</b>
+                <span>Max hits</span>
+              </div>
+            </div>
+            <div className="boss-body">
               <ul>
                 {b.attacks.map((a) => (
-                  <li key={a}>{a}</li>
+                  <li key={a}>
+                    <Md inline>{a}</Md>
+                  </li>
                 ))}
               </ul>
-              <p className="muted">{b.tips}</p>
+              <div className="howto">
+                <b>How to win:</b> {b.howTo}
+              </div>
             </div>
-          </div>
+          </section>
         ))}
       </div>
+      <p className="muted" style={{ marginTop: "1.5rem" }}>
+        Each boss has its own <Link to="/achievements">combat achievements</Link>, and four of them
+        have a pet for completing them all.
+      </p>
     </>
   );
 }

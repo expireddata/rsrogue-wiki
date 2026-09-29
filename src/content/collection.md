@@ -1,26 +1,33 @@
 # Collection log
 
-Every item a run hands out is logged for good on your **account**, in the game's Collection Log
-(account summary → Collection Log). It's separate from the run: items vanish, but the log stays.
+Runs end, but the log doesn't. Every item a run gives you is recorded on your **account** in the
+game's Collection Log (account summary → Collection Log). A new slot gets the usual chat message
+and pop-up.
 
-## Categories
+## Tabs
 
 | Tab | Pages |
 |---|---|
-| Bosses | Boss drops, plus a page for TzTok-Jad, Scurrius, Nex and Verzik Vitur (their pets) |
-| Monsters | Melee, ranged and magic equipment, supplies, keys |
-| Chests | Starter kits (trimmed or not), grimoire, supply lamp, Shieldbearer's wooden shield |
-| Gear | Chest gear by style, and combined gear |
-| Other | The trader's stock, and "Capes and rewards": achievement reward capes, helmet and skill capes |
+| Bosses | Shared boss drops, plus pages for TzTok-Jad, Scurrius, Nex and Verzik Vitur (their pets) |
+| Monsters | Melee, ranged and magic equipment, supplies and keys |
+| Chests | Starter kits (plain and trimmed), the arcane grimoire, supply lamp and Shieldbearer's wooden shield |
+| Gear | Chest gear by style, and combined jewellery and armour |
+| Other | The trader's stock, and Capes and rewards: achievement capes, the Tzkal slayer helmet and skill capes |
 
-## Getting credit
+## What counts
 
-An item is logged only for the player it was obtained by: npc drops for the player credited with the
-kill, chest rewards for whoever opened it, trader purchases for the buyer, combined jewellery for
-whoever combined it, and cosmetics when their [achievements](#/achievements) are completed.
+An item is only logged for the player who earned it, and only on pages that match where it came
+from:
 
-Items picked up from the floor, or traded, are never logged. Your starting items and blood money
-aren't either. One item can have a slot in several pages, each filled from its own source (a rune
-platebody from npcs, and from bosses).
+- **Monster and boss drops:** the player credited with the kill.
+- **Chests and crates:** whoever opened them.
+- **Trader:** the buyer.
+- **Combined gear:** whoever combined it.
+- **Pets, capes and the helmet:** when you complete the [achievements](#/achievements) that
+  unlock them.
 
-A new slot shows the usual chat message and a "Collection log" pop-up.
+A rune platebody can fill a slot on the Monsters page and another on the Bosses page, one for
+each place you got it.
+
+Items picked up off the floor or traded to you never count. Neither do your starting items or
+blood money.
