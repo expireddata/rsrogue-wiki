@@ -1,0 +1,522 @@
+[
+  {
+    "id": "JazzHands",
+    "bit": 0,
+    "tier": "Elite",
+    "type": "Perfection",
+    "name": "Jazz hands",
+    "description": "Kill TzTok-Jad without taking any damage from him.",
+    "reward": null,
+    "boss": "TzTokJad"
+  },
+  {
+    "id": "SoloJad",
+    "bit": 1,
+    "tier": "Hard",
+    "type": "Restriction",
+    "name": "Solo Jad",
+    "description": "Kill TzTok-Jad in a solo run.",
+    "reward": null,
+    "boss": "TzTokJad"
+  },
+  {
+    "id": "IveGotYou",
+    "bit": 2,
+    "tier": "Elite",
+    "type": "Mechanical",
+    "name": "I've got you",
+    "description": "Kill TzTok-Jad after soaking one of his hits for a teammate.",
+    "reward": null,
+    "boss": "TzTokJad"
+  },
+  {
+    "id": "MeleeOnly",
+    "bit": 3,
+    "tier": "Hard",
+    "type": "Restriction",
+    "name": "Melee only",
+    "description": "Kill TzTok-Jad with your whole team only hitting him with melee.",
+    "reward": null,
+    "boss": "TzTokJad"
+  },
+  {
+    "id": "JadSpeedrunner",
+    "bit": 4,
+    "tier": "Grandmaster",
+    "type": "Speed",
+    "name": "Jad speedrunner",
+    "description": "Kill TzTok-Jad in under 30 seconds from summoning him.",
+    "reward": null,
+    "boss": "TzTokJad"
+  },
+  {
+    "id": "FeelingSpecial",
+    "bit": 5,
+    "tier": "Elite",
+    "type": "Mechanical",
+    "name": "Feeling special",
+    "description": "Finish off TzTok-Jad with a special attack.",
+    "reward": null,
+    "boss": "TzTokJad"
+  },
+  {
+    "id": "MeleeRunner",
+    "bit": 6,
+    "tier": "Medium",
+    "type": "KillCount",
+    "name": "Melee runner",
+    "description": "Complete world 1 with the melee starter kit.",
+    "reward": "Your melee starter kit is gold-trimmed.",
+    "boss": null
+  },
+  {
+    "id": "MageRunner",
+    "bit": 7,
+    "tier": "Medium",
+    "type": "KillCount",
+    "name": "Mage runner",
+    "description": "Complete world 1 with the magic starter kit.",
+    "reward": "Your magic starter kit is gold-trimmed.",
+    "boss": null
+  },
+  {
+    "id": "RangedRunner",
+    "bit": 8,
+    "tier": "Medium",
+    "type": "KillCount",
+    "name": "Ranged runner",
+    "description": "Complete world 1 with the ranged starter kit.",
+    "reward": "Your ranged starter kit is gold-trimmed.",
+    "boss": null
+  },
+  {
+    "id": "Maxed",
+    "bit": 9,
+    "tier": "Grandmaster",
+    "type": "Stamina",
+    "name": "Maxed",
+    "description": "Reach 99 Attack, Strength, Defence, Ranged, Magic and Prayer in one run.",
+    "reward": "You start every run with a max cape (cosmetic, no stats).",
+    "boss": null
+  },
+  {
+    "id": "Naked",
+    "bit": 10,
+    "tier": "Elite",
+    "type": "Restriction",
+    "name": "Naked",
+    "description": "Complete world 1 without using your starter key.",
+    "reward": null,
+    "boss": null
+  },
+  {
+    "id": "HowLong",
+    "bit": 11,
+    "tier": "Master",
+    "type": "Stamina",
+    "name": "How long?!?",
+    "description": "Stay alive in world 1 for an hour.",
+    "reward": null,
+    "boss": null
+  },
+  {
+    "id": "JadNovice",
+    "bit": 12,
+    "tier": "Hard",
+    "type": "KillCount",
+    "name": "Jad Novice",
+    "description": "Kill TzTok-Jad once.",
+    "reward": null,
+    "boss": "TzTokJad"
+  },
+  {
+    "id": "JadAdept",
+    "bit": 13,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Jad Adept",
+    "description": "Kill TzTok-Jad 5 times.",
+    "reward": null,
+    "boss": "TzTokJad"
+  },
+  {
+    "id": "JadVeteran",
+    "bit": 14,
+    "tier": "Master",
+    "type": "KillCount",
+    "name": "Jad Veteran",
+    "description": "Kill TzTok-Jad 10 times.",
+    "reward": null,
+    "boss": "TzTokJad"
+  },
+  {
+    "id": "KeyToSuccess",
+    "bit": 15,
+    "tier": "Easy",
+    "type": "Mechanical",
+    "name": "Key to success",
+    "description": "Use a bloody or bloodier key to unlock a modifier from a chest.",
+    "reward": null,
+    "boss": null
+  },
+  {
+    "id": "GeneralGaragedoor",
+    "bit": 16,
+    "tier": "Elite",
+    "type": "Restriction",
+    "name": "General Garagedoor",
+    "description": "Kill General Graardor, only ever hitting him with Dinh's bulwark.",
+    "reward": null,
+    "boss": "GeneralGraardor"
+  },
+  {
+    "id": "DdsMethod",
+    "bit": 17,
+    "tier": "Hard",
+    "type": "Mechanical",
+    "name": "DDS method",
+    "description": "Finish off General Graardor with a special attack.",
+    "reward": null,
+    "boss": "GeneralGraardor"
+  },
+  {
+    "id": "GraardorSpeedrunner",
+    "bit": 18,
+    "tier": "Master",
+    "type": "Speed",
+    "name": "General Graardor Speedrunner",
+    "description": "Kill General Graardor in under 20 seconds from summoning him.",
+    "reward": null,
+    "boss": "GeneralGraardor"
+  },
+  {
+    "id": "CatchMeIfYouCan",
+    "bit": 19,
+    "tier": "Elite",
+    "type": "Mechanical",
+    "name": "Catch me if you can",
+    "description": "Kill General Graardor without him using his melee attack on anyone.",
+    "reward": null,
+    "boss": "GeneralGraardor"
+  },
+  {
+    "id": "GraardorNovice",
+    "bit": 20,
+    "tier": "Medium",
+    "type": "KillCount",
+    "name": "Graardor Novice",
+    "description": "Kill General Graardor once.",
+    "reward": null,
+    "boss": "GeneralGraardor"
+  },
+  {
+    "id": "GraardorAdept",
+    "bit": 21,
+    "tier": "Hard",
+    "type": "KillCount",
+    "name": "Graardor Adept",
+    "description": "Kill General Graardor 5 times.",
+    "reward": null,
+    "boss": "GeneralGraardor"
+  },
+  {
+    "id": "GraardorVeteran",
+    "bit": 22,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Graardor Veteran",
+    "description": "Kill General Graardor 10 times.",
+    "reward": null,
+    "boss": "GeneralGraardor"
+  },
+  {
+    "id": "ItsJustARabbit",
+    "bit": 23,
+    "tier": "Easy",
+    "type": "Mechanical",
+    "name": "It's just a rabbit",
+    "description": "Be killed by the Rabbit, and lose the run.",
+    "reward": null,
+    "boss": "Rabbit"
+  },
+  {
+    "id": "RunFromMe",
+    "bit": 24,
+    "tier": "Elite",
+    "type": "Perfection",
+    "name": "Run from me",
+    "description": "Kill the Rabbit without it dealing any damage to your team.",
+    "reward": null,
+    "boss": "Rabbit"
+  },
+  {
+    "id": "RabbitNovice",
+    "bit": 25,
+    "tier": "Medium",
+    "type": "KillCount",
+    "name": "Rabbit Novice",
+    "description": "Kill the Rabbit once.",
+    "reward": null,
+    "boss": "Rabbit"
+  },
+  {
+    "id": "RabbitAdept",
+    "bit": 26,
+    "tier": "Hard",
+    "type": "KillCount",
+    "name": "Rabbit Adept",
+    "description": "Kill the Rabbit 5 times.",
+    "reward": null,
+    "boss": "Rabbit"
+  },
+  {
+    "id": "RabbitVeteran",
+    "bit": 27,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Rabbit Veteran",
+    "description": "Kill the Rabbit 10 times.",
+    "reward": null,
+    "boss": "Rabbit"
+  },
+  {
+    "id": "KillItWithFire",
+    "bit": 28,
+    "tier": "Hard",
+    "type": "Restriction",
+    "name": "Kill it with fire",
+    "description": "Kill the Rabbit with every hit that damages it being a fire spell.",
+    "reward": null,
+    "boss": "Rabbit"
+  },
+  {
+    "id": "VerzikNovice",
+    "bit": 29,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Verzik Vitur Novice",
+    "description": "Kill Verzik Vitur once.",
+    "reward": null,
+    "boss": "Verzik"
+  },
+  {
+    "id": "VerzikAdept",
+    "bit": 30,
+    "tier": "Master",
+    "type": "KillCount",
+    "name": "Verzik Vitur Adept",
+    "description": "Kill Verzik Vitur 5 times.",
+    "reward": null,
+    "boss": "Verzik"
+  },
+  {
+    "id": "VerzikVeteran",
+    "bit": 31,
+    "tier": "Grandmaster",
+    "type": "KillCount",
+    "name": "Verzik Vitur Veteran",
+    "description": "Kill Verzik Vitur 10 times.",
+    "reward": null,
+    "boss": "Verzik"
+  },
+  {
+    "id": "RatteInTheZimmer",
+    "bit": 32,
+    "tier": "Elite",
+    "type": "Mechanical",
+    "name": "There's a ratte in the zimmer going crazy right now",
+    "description": "Kill Scurrius without ever standing still for more than 2 ticks while he is alive.",
+    "reward": null,
+    "boss": "Scurrius"
+  },
+  {
+    "id": "ScurriusNovice",
+    "bit": 33,
+    "tier": "Easy",
+    "type": "KillCount",
+    "name": "Scurrius Novice",
+    "description": "Kill Scurrius once.",
+    "reward": null,
+    "boss": "Scurrius"
+  },
+  {
+    "id": "ScurriusAdept",
+    "bit": 34,
+    "tier": "Medium",
+    "type": "KillCount",
+    "name": "Scurrius Adept",
+    "description": "Kill Scurrius 5 times.",
+    "reward": null,
+    "boss": "Scurrius"
+  },
+  {
+    "id": "ScurriusVeteran",
+    "bit": 35,
+    "tier": "Hard",
+    "type": "KillCount",
+    "name": "Scurrius Veteran",
+    "description": "Kill Scurrius 10 times.",
+    "reward": null,
+    "boss": "Scurrius"
+  },
+  {
+    "id": "RatMode",
+    "bit": 36,
+    "tier": "Hard",
+    "type": "Restriction",
+    "name": "Rat mode",
+    "description": "Kill Scurrius without ever hitting him with the same style twice in a row.",
+    "reward": null,
+    "boss": "Scurrius"
+  },
+  {
+    "id": "ProtectFromRat",
+    "bit": 37,
+    "tier": "Elite",
+    "type": "Perfection",
+    "name": "Protect from rat",
+    "description": "Kill Scurrius without taking any damage from him.",
+    "reward": null,
+    "boss": "Scurrius"
+  },
+  {
+    "id": "SoloNex",
+    "bit": 38,
+    "tier": "Master",
+    "type": "Restriction",
+    "name": "Solo Nex",
+    "description": "Kill Nex in a solo run.",
+    "reward": null,
+    "boss": "Nex"
+  },
+  {
+    "id": "PerfectNex",
+    "bit": 39,
+    "tier": "Grandmaster",
+    "type": "Perfection",
+    "name": "Perfect Nex",
+    "description": "Kill Nex without taking damage from her shadows, hitting her with a style she is protecting against, or passing on or prolonging her cough.",
+    "reward": null,
+    "boss": "Nex"
+  },
+  {
+    "id": "NexNovice",
+    "bit": 40,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Nex Novice",
+    "description": "Kill Nex once.",
+    "reward": null,
+    "boss": "Nex"
+  },
+  {
+    "id": "NexAdept",
+    "bit": 41,
+    "tier": "Master",
+    "type": "KillCount",
+    "name": "Nex Adept",
+    "description": "Kill Nex 5 times.",
+    "reward": null,
+    "boss": "Nex"
+  },
+  {
+    "id": "NexVeteran",
+    "bit": 42,
+    "tier": "Grandmaster",
+    "type": "KillCount",
+    "name": "Nex Veteran",
+    "description": "Kill Nex 10 times.",
+    "reward": null,
+    "boss": "Nex"
+  },
+  {
+    "id": "NexTimeTryHarder",
+    "bit": 43,
+    "tier": "Master",
+    "type": "Restriction",
+    "name": "Nex time, try harder",
+    "description": "Kill Nex without eating any food during the fight.",
+    "reward": null,
+    "boss": "Nex"
+  },
+  {
+    "id": "PerfectVerzik",
+    "bit": 44,
+    "tier": "Grandmaster",
+    "type": "Perfection",
+    "name": "Perfect Verzik",
+    "description": "Kill Verzik Vitur without anyone taking a hit while praying against the wrong style, being stomped or hit by a tornado, and without her leaving her tiles.",
+    "reward": null,
+    "boss": "Verzik"
+  },
+  {
+    "id": "SoloVerzik",
+    "bit": 45,
+    "tier": "Master",
+    "type": "Restriction",
+    "name": "Solo Verzik",
+    "description": "Kill Verzik Vitur in a solo run.",
+    "reward": null,
+    "boss": "Verzik"
+  },
+  {
+    "id": "Kicker",
+    "bit": 46,
+    "tier": "Grandmaster",
+    "type": "Restriction",
+    "name": "Kicker",
+    "description": "Kill Verzik Vitur without anyone attacking her with a weapon equipped.",
+    "reward": null,
+    "boss": "Verzik"
+  },
+  {
+    "id": "TheTank",
+    "bit": 47,
+    "tier": "Grandmaster",
+    "type": "Mechanical",
+    "name": "The Tank",
+    "description": "Kill Verzik Vitur without leaving her melee distance.",
+    "reward": null,
+    "boss": "Verzik"
+  },
+  {
+    "id": "MeleeWorldEnder",
+    "bit": 48,
+    "tier": "Grandmaster",
+    "type": "KillCount",
+    "name": "Melee World Ender",
+    "description": "Complete a full run with the melee starter kit.",
+    "reward": "You start every run with an infernal max cape (cosmetic, no stats).",
+    "boss": null
+  },
+  {
+    "id": "MageWorldEnder",
+    "bit": 49,
+    "tier": "Grandmaster",
+    "type": "KillCount",
+    "name": "Mage World Ender",
+    "description": "Complete a full run with the magic starter kit.",
+    "reward": "You start every run with an imbued saradomin max cape (cosmetic, no stats).",
+    "boss": null
+  },
+  {
+    "id": "RangedWorldEnder",
+    "bit": 50,
+    "tier": "Grandmaster",
+    "type": "KillCount",
+    "name": "Ranged World Ender",
+    "description": "Complete a full run with the ranged starter kit.",
+    "reward": "You start every run with Dizana's max cape (cosmetic, no stats).",
+    "boss": null
+  },
+  {
+    "id": "TheUltimateNudist",
+    "bit": 51,
+    "tier": "Grandmaster",
+    "type": "Restriction",
+    "name": "The Ultimate Nudist",
+    "description": "Complete a full run without using your starter key.",
+    "reward": "You start every run with a mythical max cape (cosmetic, no stats).",
+    "boss": null
+  }
+]

@@ -1,0 +1,212 @@
+{
+  "how": "- **Getting them.** Chests on the island are opened with keys dropped by npcs. Each chest offers\n  three rewards, and each one is independently a modifier, a piece of gear or an xp reward, so a\n  chest can offer up to three modifiers. A modifier option's description is printed in the\n  chatbox when the chest's menu opens, and the menu shows how many stacks you already have\n  (`(have x2)`).\n- **Rarity and keys.** Every modifier is **common** (steady, smaller effects), **rare**\n  (build-defining) or **special** (run-defining, often with a catch). The key you open a chest\n  with decides the odds:\n\n  | | Bloody key | Bloodier key |\n  |---|---|---|\n  | Drop chance (per kill) | 12% | 3% |\n  | Option is a modifier / gear / xp | 35% / 15% / 50% | 45% / 30% / 25% |\n  | Modifier is common / rare / special | 78% / 20% / 2% | 25% / 60% / 15% |\n  | XP lamp (per danger level, times your xp rate) | 2,000 xp | 5,000 xp |\n  | XP rate boost | +20x | +50x |\n\n  Gear is only offered if you can wear it with your current levels. If you can't wear any chest\n  gear yet, options are never gear. A gear option first picks a combat style: the style you chose\n  from your starter chest is 6 times as likely as each other style (75% vs 12.5%), however many\n  items each style has. Mid-tier gear (granite, obsidian, the moon sets, the barrows sets,\n  Karil's, Morrigan's, armadyl, crystal, masori, Ahrim's, Zuriel's, elder chaos and virtus) comes\n  as a **whole set** in one pick, while best-in-slot gear comes one piece at a time. Ranged\n  weapons come with 100 of their ammo. XP lamps offer the skills your chosen style trains first.\n- **Stacking.** Picking a modifier you already hold adds a stack. Unless stated otherwise, every\n  number below is **per stack** and adds up linearly (two stacks of Recoil reflect 20%).\n  Special modifiers are the exception: most can only be held once, and the ranked ones (Soaking\n  and Speed demon) go up to rank 3, each rank using its own number. Chests stop offering a\n  modifier once you hold its maximum.\n- **Per player, per run.** Modifiers belong to the player who picked them and end with the run.\n  Dying starts a fresh run with none.\n- **Healing cap.** All healing from modifiers and food goes through one place, and none of it\n  takes you above your hitpoints level (only Saradomin brews and ambrosia boost past it).\n- **Seeing them.** Every modifier you hold is shown on the buff bar, the row of icons above the\n  chatbox (like the Colosseum's modifiers). Each has its own icon, shows its stack count (or\n  rank), and its hover tooltip gives its name and effect. Modifiers that can only be held once\n  show no count. The bar shows at most 12 icons (8 in fixed mode), spell buffs first. RuneLite's\n  \"Timers & Buffs\" plugin shows its own infoboxes, under the original buffs' names, for some of\n  the vars we set, so turn it off to see only the buff bar.",
+  "categoryIntro": {
+    "How modifiers work": "",
+    "Quick reference": "",
+    "Sustain": "",
+    "Offense": "Extra hits from Recoil, Cleave and Echo strike are *typeless*: they never trigger melee effects\n(so Cleave splashes cannot cleave again) and are not boosted by damage bonuses. They land one game\ntick later.",
+    "Defence": "Modifiers that change damage you take are applied in this order when the hit lands:\n[Soaking](#soaking) (teammates take their share), [Glass cannon](#glass-cannon),\n[Shieldbearer](#shieldbearer), Thick skin, Evasion, then the death savers:\n[Immortal](#immortal) first, then [Second wind](#second-wind).",
+    "Prayer": "Protection prayers matter against bosses (TzTok-Jad's attacks are fully blocked by the right\none), so these help train Prayer alongside bones (buried, or offered on the boss altar) and\nprayer potions. Xp is before xp rates, so it is multiplied by your xp rate like any other xp.",
+    "Loot": "These use the stacks of the player credited with the kill (the one who dealt the most damage).",
+    "Risk and reward": "",
+    "Special": "Special modifiers are rare finds (2% of bloody key modifier options, 15% of bloodier key ones)\nthat change how a run plays. Most come with a catch, and most can only be held once."
+  },
+  "modifiers": [
+    {
+      "name": "Blood fury",
+      "rarity": "Rare",
+      "category": "Sustain",
+      "summary": "20% chance on melee hits to heal 30% of the damage dealt",
+      "body": "The amulet of blood fury's effect, without wearing it.\n\n- Each of your melee hits has a **20%** chance to heal you for **30%** of the damage it dealt\n  (rounded down).\n- Stacking raises the chance: 2 stacks is 40%, 5 stacks always procs. The heal amount does not\n  stack.\n- With [Draw your sword](#draw-your-sword), your ranged and magic hits count as melee hits too."
+    },
+    {
+      "name": "Regeneration",
+      "rarity": "Common",
+      "category": "Sustain",
+      "summary": "Heal 1 hitpoint about every 10 seconds",
+      "body": "- Heals **1** hitpoint about every **10 seconds** (every 16 game ticks, checked every 5 ticks).\n- Stacking raises the amount healed each time, not the frequency."
+    },
+    {
+      "name": "Soul harvest",
+      "rarity": "Common",
+      "category": "Sustain",
+      "summary": "Heal 1-2 hitpoints on every kill",
+      "body": "- Every kill heals you for a random amount between **1** and **2** hitpoints. With several stacks,\n  the range becomes `stacks` to `2 × stacks`.\n- A kill is credited to whoever landed the hit that brought the npc to 0 hitpoints, including\n  hits from Cleave, Echo strike and Recoil."
+    },
+    {
+      "name": "Hearty appetite",
+      "rarity": "Common",
+      "category": "Sustain",
+      "summary": "Food heals 50% more",
+      "body": "- Food heals **50%** more (rounded down). A shark heals 30 instead of 20 with one stack, and 40\n  with two.\n- Low rolls round away: a purple sweet that rolls 1 still heals 1 with a single stack."
+    },
+    {
+      "name": "Second wind",
+      "rarity": "Rare",
+      "category": "Sustain",
+      "summary": "Once, survive a lethal hit on 1 hitpoint and heal to 50%",
+      "body": "- Once per stack, a hit that would kill you instead leaves you on **1** hitpoint and then heals\n  you to **50%** of your hitpoints level.\n- Each stack is a single use. Picking the modifier again later adds a fresh charge.\n- It is checked last, after [Glass cannon](#glass-cannon), [Thick skin](#thick-skin) and\n  [Evasion](#evasion) have changed the hit."
+    },
+    {
+      "name": "Recoil",
+      "rarity": "Common",
+      "category": "Offense",
+      "summary": "Reflect 10% of damage taken back at the attacker",
+      "body": "The ring of recoil's effect, without wearing it.\n\n- When an npc hits you, **10%** of the damage you actually took is reflected back at it (at least\n  1, if you took any damage)."
+    },
+    {
+      "name": "Cleave",
+      "rarity": "Rare",
+      "category": "Offense",
+      "summary": "Melee hits splash 25% of their damage (rounded up) onto adjacent npcs",
+      "body": "Built for the island's swarms. The whole server is multi-combat, so crowds gather quickly.\n\n- Each melee hit splashes **25%** of its damage (rounded up) onto every other living npc within\n  **1** tile of your target.\n- Because it rounds up, every melee hit that deals damage splashes at least 1: a hit of 1 to 4\n  splashes 1, a hit of 5 to 8 splashes 2.\n- With [Draw your sword](#draw-your-sword), your ranged and magic hits cleave too.\n- Splash damage gives combat xp like the hit it came from, in the skills your attack style\n  trains (melee xp, or ranged or magic xp for cleaving ranged and magic hits)."
+    },
+    {
+      "name": "Echo strike",
+      "rarity": "Rare",
+      "category": "Offense",
+      "summary": "10% chance for any hit to strike again for 50%",
+      "body": "- Each hit (melee, ranged or magic) has a **10%** chance to strike again for **50%** of its\n  damage (at least 1).\n- Stacking raises the chance; 10 stacks echo every hit.\n- The echo gives combat xp like the hit it repeats, in the skills your attack style trains."
+    },
+    {
+      "name": "Long reach",
+      "rarity": "Rare",
+      "category": "Offense",
+      "summary": "+1 attack range per stack (up to 3), melee included",
+      "body": "- **+1 attack range** per stack, for every style: melee (so a scimitar hits from 2 tiles away),\n  ranged, magic, autocasting and spells cast on an npc directly.\n- With [Draw your sword](#draw-your-sword), ranged and magic start from its 1 tile and Long reach\n  adds to that.\n- Range never goes past 10 tiles, the most any attack can reach.\n- Stacks up to **3** times."
+    },
+    {
+      "name": "Berserker",
+      "rarity": "Rare",
+      "category": "Offense",
+      "summary": "+20% damage while below 50% hitpoints",
+      "body": "- Your hits deal **20%** more damage while you are below **50%** of your hitpoints level.\n- Pairs naturally with [Blood pact](#blood-pact), which keeps draining your hitpoints."
+    },
+    {
+      "name": "Executioner",
+      "rarity": "Common",
+      "category": "Offense",
+      "summary": "+50% damage against npcs below 25% hitpoints",
+      "body": "- Your hits deal **50%** more damage to npcs below **25%** of their hitpoints.\n\n**How damage bonuses combine.** Berserker, Executioner and [Glass cannon](#glass-cannon) add\ntogether before being applied. A hit of 10 with Glass cannon (+30%) and Berserker (+20%) becomes\n15, not 15.6. Bonuses apply to your melee, ranged and magic hits on any npc, when the hit is\ndealt."
+    },
+    {
+      "name": "Thick skin",
+      "rarity": "Common",
+      "category": "Defence",
+      "summary": "Every hit taken is reduced by 1",
+      "body": "- Every hit you take is reduced by **1** (to a minimum of 0).\n- It never saves you from a hit that would kill you: a lethal hit is not reduced. (Npc hits are\n  capped to your hitpoints when they are queued, so otherwise you could not die once your hitpoints\n  were at or below the reduction.)\n- Very strong early, when npcs hit 1s and 2s, and fades as the director sends heavier hitters."
+    },
+    {
+      "name": "Evasion",
+      "rarity": "Rare",
+      "category": "Defence",
+      "summary": "10% chance (up to 50%) to avoid a hit completely",
+      "body": "- Each hit you take has a **10%** chance to be avoided completely, up to a maximum of **50%**\n  (5 stacks).\n- An evaded hit shows as a blocked (blue) 0."
+    },
+    {
+      "name": "Devout",
+      "rarity": "Common",
+      "category": "Prayer",
+      "summary": "Kills give Prayer xp (50% of the npc's level) and restore 1 prayer point",
+      "body": "- Every kill (landing the killing blow) gives Prayer xp worth **50%** of the npc's level, worked\n  out from its current stats like its loot level. A level 40 npc gives 20 xp, or 2,000 at 100x.\n- Every kill also restores **1** prayer point, up to your Prayer level."
+    },
+    {
+      "name": "Divine ward",
+      "rarity": "Rare",
+      "category": "Prayer",
+      "summary": "Npc attacks your protection prayer is up against give Prayer xp (25% of their level)",
+      "body": "- Every npc attack of a style your protection prayer is up against (melee, missiles or magic)\n  gives Prayer xp worth **25%** of the attacker's level, whether it would have hit or not.\n- Protection prayers block npc hits completely, so the xp comes from the attacker's level rather\n  than the damage blocked.\n- It needs a protection prayer (level 37+) to do anything, so it trains Prayer further rather than\n  getting you there."
+    },
+    {
+      "name": "Scavenger",
+      "rarity": "Common",
+      "category": "Loot",
+      "summary": "+10% equipment drop chance, +15% chance of a higher tier",
+      "body": "- Equipment drop chance rises by **10** percentage points (from a base of 45%).\n- The chance of equipment rolling one tier higher rises by **15** percentage points (from a base\n  of 5%). However high it gets, the 25% chance of a lower tier always remains."
+    },
+    {
+      "name": "Treasure hunter",
+      "rarity": "Common",
+      "category": "Loot",
+      "summary": "+100% key drop chance (max 2 stacks; keys capped at 3x)",
+      "body": "- Both key drop chances (bloody 12%, bloodier 3%) rise by **100%** of their base chance: 24% and\n  6% with one stack, 36% and 9% with two.\n- It can be held at most **2** times.\n- **Key cap:** however Treasure hunter and [Bounty](#bounty) combine, keys never drop more than\n  **3x** as often as normal (36% bloody, 9% bloodier). Their bonuses add together rather than\n  multiply, so a single Bounty stack and a single Treasure hunter stack already reach the cap.\n- More keys means more chests, which means more modifiers."
+    },
+    {
+      "name": "Sweet tooth",
+      "rarity": "Common",
+      "category": "Loot",
+      "summary": "Purple sweet drops multiplied by (1 + stacks)",
+      "body": "- Purple sweet drops are multiplied by **(1 + stacks)**: 1-3 sweets become 2-6 with one stack.\n  (Solid food is not affected.)"
+    },
+    {
+      "name": "Glass cannon",
+      "rarity": "Rare",
+      "category": "Risk/reward",
+      "summary": "Deal and take 30% more damage",
+      "body": "- Your hits deal **30%** more damage (added to the other damage bonuses).\n- Hits you take deal **30%** more damage."
+    },
+    {
+      "name": "Bounty",
+      "rarity": "Rare",
+      "category": "Risk/reward",
+      "summary": "The director spawns faster, your drop chances rise (diminishing per stack)",
+      "body": "- The run's director earns **50%** more spawn credits. This is **run-wide**: it adds up across\n  every member's stacks, so one player's Bounty makes the island more dangerous for everyone.\n- The holder's drop chances (equipment, food, bones and both keys) rise on a curve that\n  approaches, but never reaches, **+200%**: +100% with one stack, +133% with two, +150% with\n  three, +160% with four. Stacking it mostly adds danger.\n- Keys are also held to the [key cap](#treasure-hunter) (3x their normal chance)."
+    },
+    {
+      "name": "Blood pact",
+      "rarity": "Rare",
+      "category": "Risk/reward",
+      "summary": "Lose 1 hitpoint every 3/2/1 ticks (by danger level), heal all the damage you deal",
+      "body": "- You lose **1** hitpoint every **3** game ticks at danger levels 1-2, every **2** at danger\n  levels 3-4, and every tick from danger level 5. The drain never takes you below 1 hitpoint, and\n  it waits while the run is paused (before it starts, and after a boss is defeated).\n- Every hit you deal heals you for **100%** of its damage, up to your hitpoints level.\n- Can only be held once.\n- Combine with [Berserker](#berserker) for a high-risk damage build."
+    },
+    {
+      "name": "Maxed, but at what cost",
+      "rarity": "Special",
+      "category": "Special",
+      "summary": "Level 99 in every combat skill, but no more xp",
+      "body": "- Instantly sets Attack, Strength, Defence, Hitpoints, Ranged, Magic and Prayer to level **99**,\n  fully restored.\n- From then on, **you gain no xp** from any source for the rest of the run, so no skill can go\n  past 99 (and chests stop offering xp lamps and xp rate boosts).\n- Only offered by key chests, as a deliberate pick: supply crates never give it.\n- Can only be held once."
+    },
+    {
+      "name": "Draw your sword",
+      "rarity": "Special",
+      "category": "Special",
+      "summary": "Double ranged and magic damage, but only from 1 tile",
+      "body": "- Your ranged and magic attacks deal **double damage** (added to the other damage bonuses).\n- They can only be made from **1 tile** away, so ranged and magic players have to fight up close.\n  This applies to autocasting and to casting spells on an npc directly. [Long reach](#long-reach)\n  still adds its range on top.\n- Your ranged and magic hits also count as melee hits for [Blood fury](#blood-fury) and\n  [Cleave](#cleave).\n- Can only be held once."
+    },
+    {
+      "name": "Soaking",
+      "rarity": "Special",
+      "category": "Special",
+      "summary": "Take 20/30/50% (by rank) of teammates' damage for them",
+      "body": "For group runs. Solo, it has no effect.\n\n- Each hit a teammate takes is partly taken by you instead: **20%**, **30%** or **50%** of it at\n  rank 1, 2 or 3, rounded up. A hit of 3 at rank 1 puts 1 on you and 2 on your teammate.\n- The share is dealt to you as a separate hit a tick later, and your own defensive modifiers\n  apply to it. Damage you soak is never passed on again.\n- Several soakers each take their share, up to the whole hit."
+    },
+    {
+      "name": "Shieldbearer",
+      "rarity": "Special",
+      "category": "Special",
+      "summary": "Take 50% less damage while wearing a shield",
+      "body": "- You take **50%** less damage while wearing a shield (any off-hand item with \"shield\" in its\n  name, such as kiteshields and square shields).\n- Picking it gives you a **wooden shield**, so it works straight away.\n- Applied after Glass cannon and before Thick skin.\n- Can only be held once."
+    },
+    {
+      "name": "Osmumten's champion",
+      "rarity": "Special",
+      "category": "Special",
+      "summary": "Every accuracy roll is made twice",
+      "body": "Osmumten's fang's accuracy, on every weapon.\n\n- Every accuracy roll you make (melee, ranged and magic) is made **twice**, and the attack lands if\n  either roll succeeds.\n- Osmumten's fang and the drygore blowpipe already roll their attack roll twice against one\n  defence roll. With this modifier they roll it **3 times** instead.\n- Can only be held once."
+    },
+    {
+      "name": "Speed demon",
+      "rarity": "Special",
+      "category": "Special",
+      "summary": "Attacks are 20/30/50% (by rank) faster",
+      "body": "- Your attacks are **20%**, **30%** or **50%** faster at rank 1, 2 or 3. Attack delays are\n  rounded down: a 4-tick weapon attacks every 3, 2 or 2 ticks, and a 5-tick weapon every 4, 3 or\n  2 ticks. Attacks are never faster than every tick."
+    },
+    {
+      "name": "Immortal",
+      "rarity": "Special",
+      "category": "Special",
+      "summary": "A lethal hit fully heals you instead (5 minute cooldown)",
+      "body": "- A hit that would kill you leaves you on 1 hitpoint, then **fully heals** you.\n- It then recharges for **5 minutes**. While it is charged, it saves you before\n  [Second wind](#second-wind), so Second wind's single-use charges are kept for when Immortal is\n  recharging.\n- Can only be held once."
+    }
+  ]
+}

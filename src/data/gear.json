@@ -1,0 +1,283 @@
+[
+  {
+    "style": "Melee",
+    "sets": [
+      {
+        "name": "Granite set",
+        "items": [
+          "Granite helm",
+          "Granite body",
+          "Granite legs",
+          "Granite gloves",
+          "Granite boots",
+          "Granite shield",
+          "Granite maul"
+        ]
+      },
+      {
+        "name": "Obsidian armour",
+        "items": [
+          "Obsidian helmet",
+          "Obsidian platebody",
+          "Obsidian platelegs"
+        ]
+      },
+      {
+        "name": "Blood moon set",
+        "items": [
+          "Blood moon helm",
+          "Blood moon chestplate",
+          "Blood moon tassets",
+          "Dual macuahuitl"
+        ]
+      },
+      {
+        "name": "Dharok's set",
+        "items": [
+          "Dharok helm",
+          "Dharok greataxe",
+          "Dharok platebody",
+          "Dharok platelegs"
+        ]
+      },
+      {
+        "name": "Guthan's set",
+        "items": [
+          "Guthan helm",
+          "Guthan warspear",
+          "Guthan platebody",
+          "Guthan chainskirt"
+        ]
+      },
+      {
+        "name": "Torag's set",
+        "items": [
+          "Torag helm",
+          "Torag hammers",
+          "Torag platebody",
+          "Torag platelegs"
+        ]
+      },
+      {
+        "name": "Verac's set",
+        "items": [
+          "Verac helm",
+          "Verac flail",
+          "Verac brassard",
+          "Verac plateskirt"
+        ]
+      }
+    ],
+    "singles": [
+      "Fighter torso",
+      "Dragon dagger",
+      "Dragon scimitar",
+      "Dragon longsword",
+      "Dragon mace",
+      "Dragon battleaxe",
+      "Dragon warhammer",
+      "Dragon halberd",
+      "Dragon claws",
+      "Dragon 2h sword",
+      "Dragon spear",
+      "Abyssal whip",
+      "Abyssal tentacle",
+      "Abyssal dagger",
+      "Abyssal bludgeon",
+      "Armadyl godsword",
+      "Bandos godsword",
+      "Saradomin godsword",
+      "Zamorak godsword",
+      "Saradomin sword",
+      "Zamorak spear",
+      "Bandos chestplate",
+      "Bandos tassets",
+      "Bandos boots",
+      "Dragon boots",
+      "Primordial boots",
+      "Ferocious gloves",
+      "Infernal cape",
+      "Neitiznot faceguard",
+      "Dinh's bulwark",
+      "Ghrazi rapier",
+      "Scythe of vitur",
+      "Elder maul",
+      "Blade of saeldor",
+      "Dragon hunter lance",
+      "Osmumten's fang",
+      "Justiciar faceguard",
+      "Justiciar chestguard",
+      "Justiciar legguards",
+      "Inquisitor's mace",
+      "Inquisitor's great helm",
+      "Inquisitor's hauberk",
+      "Inquisitor's plateskirt",
+      "Torva full helm",
+      "Torva platebody",
+      "Torva platelegs",
+      "Voidwaker",
+      "Thunder khopesh",
+      "Noxious halberd",
+      "Avernic treads (max)",
+      "Lightbearer",
+      "Amulet of fury",
+      "Amulet of torture",
+      "Amulet of rancour",
+      "Berserker ring (i)",
+      "Warrior ring (i)",
+      "Ultor ring",
+      "Bellator ring"
+    ]
+  },
+  {
+    "style": "Ranged",
+    "sets": [
+      {
+        "name": "Eclipse moon set",
+        "items": [
+          "Eclipse moon helm",
+          "Eclipse moon chestplate",
+          "Eclipse moon tassets",
+          "Eclipse atlatl",
+          "Atlatl dart"
+        ]
+      },
+      {
+        "name": "Karil's set",
+        "items": [
+          "Karil coif",
+          "Karil crossbow",
+          "Karil leathertop",
+          "Karil leatherskirt",
+          "Bolt rack"
+        ]
+      },
+      {
+        "name": "Morrigan's set",
+        "items": [
+          "Morrigan's coif",
+          "Morrigan's leather body",
+          "Morrigan's leather chaps",
+          "Morrigan's javelin"
+        ]
+      },
+      {
+        "name": "Armadyl armour",
+        "items": [
+          "Armadyl helmet",
+          "Armadyl chestplate",
+          "Armadyl chainskirt"
+        ]
+      },
+      {
+        "name": "Crystal armour",
+        "items": [
+          "Crystal helm",
+          "Crystal body",
+          "Crystal legs"
+        ]
+      },
+      {
+        "name": "Masori armour",
+        "items": [
+          "Masori mask",
+          "Masori body",
+          "Masori chaps"
+        ]
+      }
+    ],
+    "singles": [
+      "Pegasian boots",
+      "Necklace of anguish",
+      "Zaryte vambraces",
+      "Ava's assembler",
+      "Toxic blowpipe",
+      "Drygore blowpipe",
+      "Archers ring (i)",
+      "Venator ring",
+      "Dragon crossbow + Dragon bolts x100",
+      "Armadyl crossbow + Dragon bolts x100",
+      "Dragon hunter crossbow + Dragon bolts x100",
+      "Zaryte crossbow + Ruby dragon bolts (e) x100",
+      "Dark bow + Dragon arrow x100",
+      "Twisted bow + Dragon arrow x100",
+      "Heavy ballista + Dragon javelin x100",
+      "Dragon knife x100",
+      "Dragon dart x100",
+      "Dragon thrownaxe x100",
+      "Red chinchompa x100",
+      "Black chinchompa x100"
+    ]
+  },
+  {
+    "style": "Magic",
+    "sets": [
+      {
+        "name": "Blue moon set",
+        "items": [
+          "Blue moon helm",
+          "Blue moon chestplate",
+          "Blue moon tassets",
+          "Blue moon spear"
+        ]
+      },
+      {
+        "name": "Ahrim's set",
+        "items": [
+          "Ahrim hood",
+          "Ahrim staff",
+          "Ahrim robetop",
+          "Ahrim robeskirt"
+        ]
+      },
+      {
+        "name": "Zuriel's set",
+        "items": [
+          "Zuriel's hood",
+          "Zuriel's staff",
+          "Zuriel's robe top",
+          "Zuriel's robe bottom"
+        ]
+      },
+      {
+        "name": "Elder chaos robes",
+        "items": [
+          "Elder chaos hood",
+          "Elder chaos top",
+          "Elder chaos robe"
+        ]
+      },
+      {
+        "name": "Virtus robes",
+        "items": [
+          "Virtus mask",
+          "Virtus robe top",
+          "Virtus robe bottom"
+        ]
+      }
+    ],
+    "singles": [
+      "Mystic smoke staff",
+      "Ancient staff",
+      "Staff of the dead",
+      "Nightmare staff",
+      "Kodai wand",
+      "Tumeken's shadow",
+      "Trident of the seas",
+      "Trident of the swamp",
+      "Sanguinesti staff",
+      "Ancestral hat",
+      "Ancestral robe top",
+      "Ancestral robe bottom",
+      "Occult necklace",
+      "Tormented bracelet",
+      "Eternal boots",
+      "Imbued Zamorak cape",
+      "Elidinis' ward",
+      "Tome of fire",
+      "Confliction gauntlets",
+      "Seers ring (i)",
+      "Magus ring"
+    ]
+  }
+]
