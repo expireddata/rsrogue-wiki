@@ -22,7 +22,7 @@ submodule at `wiki/` in rsrogue. After changing those in the game, run:
 npm run sync
 ```
 
-and commit the updated `src/data/*.json`. The generated files are committed, so CI builds without
+and commit the updated `src/data/*.json` and `public/sprites/` (the chest card icons). The generated files are committed, so CI builds without
 the game repo. The prose pages (`src/content/*.md`, and the maps and bosses pages) are hand-written.
 
 ## Deploy

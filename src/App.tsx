@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { NavLink, Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { Link, NavLink, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Md from "./Md";
-import Overview from "./content/overview.md?raw";
+import Sprite from "./Sprite";
 import Director from "./content/director.md?raw";
 import Loot from "./content/loot.md?raw";
 import Trader from "./content/trader.md?raw";
@@ -9,6 +9,7 @@ import Upgrades from "./content/upgrades.md?raw";
 import Capes from "./content/capes.md?raw";
 import Collection from "./content/collection.md?raw";
 import Tips from "./content/tips.md?raw";
+import Home from "./pages/Home";
 import Chests from "./pages/Chests";
 import Modifiers from "./pages/Modifiers";
 import Maps from "./pages/Maps";
@@ -16,20 +17,27 @@ import Bosses from "./pages/Bosses";
 import Achievements from "./pages/Achievements";
 
 const nav: { to: string; label: string; group: string }[] = [
-  { to: "/", label: "Game overview", group: "Basics" },
-  { to: "/tips", label: "Getting started", group: "Basics" },
-  { to: "/director", label: "Difficulty & worlds", group: "Basics" },
-  { to: "/maps", label: "Maps", group: "World" },
-  { to: "/bosses", label: "Bosses", group: "World" },
-  { to: "/loot", label: "Loot & food", group: "Items" },
-  { to: "/chests", label: "Chests & gear", group: "Items" },
-  { to: "/modifiers", label: "Modifiers", group: "Items" },
-  { to: "/upgrades", label: "Gear upgrades & life points", group: "Items" },
-  { to: "/trader", label: "Trader & looting bag", group: "Items" },
-  { to: "/capes", label: "Skill capes", group: "Items" },
-  { to: "/achievements", label: "Combat achievements", group: "Progression" },
-  { to: "/collection", label: "Collection log", group: "Progression" },
+  { to: "/", label: "Home", group: "Start here" },
+  { to: "/tips", label: "Your first run", group: "Start here" },
+  { to: "/director", label: "Danger & the director", group: "The run" },
+  { to: "/maps", label: "Maps", group: "The run" },
+  { to: "/bosses", label: "Bosses", group: "The run" },
+  { to: "/chests", label: "Chests & gear", group: "Getting stronger" },
+  { to: "/modifiers", label: "Modifiers", group: "Getting stronger" },
+  { to: "/upgrades", label: "Upgrades & life points", group: "Getting stronger" },
+  { to: "/loot", label: "Loot & supplies", group: "Getting stronger" },
+  { to: "/capes", label: "Skill capes", group: "Getting stronger" },
+  { to: "/trader", label: "Trader & looting bag", group: "Getting stronger" },
+  { to: "/achievements", label: "Combat achievements", group: "Kept forever" },
+  { to: "/collection", label: "Collection log", group: "Kept forever" },
 ];
+
+const Brand = ({ className = "" }: { className?: string }) => (
+  <Link to="/" className={"brand " + className}>
+    <Sprite name="bloodier_key" />
+    rs<span>rogue</span>
+  </Link>
+);
 
 export default function App() {
   const [open, setOpen] = useState(false);
@@ -37,42 +45,36 @@ export default function App() {
   useEffect(() => {
     setOpen(false);
     window.scrollTo(0, 0);
+    const page = nav.find((n) => n.to === pathname);
+    document.title = page && page.to !== "/" ? `${page.label} · rsrogue wiki` : "rsrogue wiki";
   }, [pathname]);
   const groups = [...new Set(nav.map((n) => n.group))];
   return (
     <div className="layout">
       <header className="topbar">
-        <button className="menu" onClick={() => setOpen(!open)} aria-label="Menu">
+        <button className="menu" onClick={() => setOpen(!open)} aria-label="Menu" aria-expanded={open}>
           ☰
         </button>
-        <span className="brand">rsrogue wiki</span>
+        <Brand />
       </header>
       <nav className={"sidebar" + (open ? " open" : "")}>
-        <div className="brand desktop">rsrogue wiki</div>
+        <Brand className="desktop" />
         {groups.map((g) => (
           <div key={g}>
             <div className="group">{g}</div>
             {nav
               .filter((n) => n.group === g)
               .map((n) => (
-                <NavLink key={n.to} to={n.to} end>
+                <NavLink key={n.to} to={n.to} className="nav" end>
                   {n.label}
                 </NavLink>
               ))}
           </div>
         ))}
-        <a
-          className="ext"
-          href="https://github.com/expireddata/rsrogue"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Source on GitHub ↗
-        </a>
       </nav>
       <main>
         <Routes>
-          <Route path="/" element={<Md>{Overview}</Md>} />
+          <Route path="/" element={<Home />} />
           <Route path="/tips" element={<Md>{Tips}</Md>} />
           <Route path="/director" element={<Md>{Director}</Md>} />
           <Route path="/maps" element={<Maps />} />

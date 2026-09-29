@@ -46,29 +46,27 @@ export default function Achievements() {
   return (
     <>
       <h1>Combat achievements</h1>
-      <p>
-        Goals met during a run stay completed on your <b>account</b> for good, unlike everything
-        else. There are {list.length} of them, worth {total} points in total. They show in the
-        in-game Combat Tasks interface (account summary → Combat Tasks).
+      <p className="lede">
+        Runs reset. These don't. {list.length} achievements, worth {total} points, saved on your
+        account for good and shown in the game's Combat Tasks menu (account summary → Combat
+        Tasks).
       </p>
       <ul>
         <li>
-          <b>Boss achievements</b> only count for members who hit the boss and are still alive when
-          it dies.
+          <b>Boss tasks</b> count for every member who hit the boss and is still alive when it dies.
         </li>
         <li>
-          <b>Kill counts</b> are per account. Every member who hit the boss gets the kill, even if
-          they died. Each boss has Novice (1), Adept (5) and Veteran (10) achievements.
+          <b>Kill counts</b> count for everyone who hit the boss, dead or alive. Each boss has
+          Novice (1 kill), Adept (5) and Veteran (10) tasks.
         </li>
         <li>
-          <b>Set rewards:</b> completing every achievement of a boss makes its pet follow you
-          (TzRek-Jad, Scurrius's pet, Nexling, Lil' Zik). Every achievement adds a Tzkal slayer
-          helmet to your starting kit.
+          <b>Finish a boss's whole set</b> and its pet follows you every run: TzRek-Jad, Scurrius's
+          pet, Nexling or Lil' Zik.
         </li>
         <li>
-          Points per tier:{" "}
-          {tiers.map((t) => `${t} ${points[t]}`).join(" · ")}.
+          <b>Finish every task</b> to start every run with a Tzkal slayer helmet.
         </li>
+        <li>Points per tier: {tiers.map((t) => `${t} ${points[t]}`).join(" · ")}.</li>
       </ul>
       <div className="filters">
         <select value={tier} onChange={(e) => setTier(e.target.value)}>

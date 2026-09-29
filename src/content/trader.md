@@ -1,33 +1,37 @@
 # Trader & looting bag
 
-## The wandering trader
+Kill a boss and a **wandering trader** appears next to the portal. It buys your spare gear for
+**blood money** and sells keys, supplies, gear and upgrades. Blood money you don't spend carries
+over to the next trader.
 
-Defeating a boss spawns a **wandering trader** next to the portal. It trades in **blood money**,
-which carries over to the next world's trader.
+## Selling
 
-**Selling.** The trader buys only equipment, priced by its *value level*: the highest level needed
-to wear it (or higher, for gear whose requirements undersell it, like jewellery). Sold gear vanishes.
-Ammo is never used up, so it is bought and sold only in whole stacks of 50.
+- The trader only buys **equipment**. Sold gear is gone.
+- Price depends on the item's **value level**: the highest level needed to wear it, or more for
+  gear whose requirements undersell it, like jewellery and the infernal cape.
+- Ammo is bought and sold in stacks of 50, and selling takes the whole stack.
+- Upgraded gear sells too, but its upgrades are lost once you hold none of it.
 
-**Buying.** Stock is rolled at random for each world, and is never restocked. It's shared by the
-whole team. Each kind is rolled independently:
+## Buying
 
-| Stock | Chance | Contents |
+Each world's stock is rolled fresh, shared by the whole team and **never restocked**, so decide
+who gets what. Each kind of stock is rolled on its own, and there's always something:
+
+| Stock | Chance | What's on offer |
 |---|---|---|
-| Keys | 60% | 2-4 bloody keys, and 40% of the time a bloodier key |
-| Trader's lamps | 35% | Each worth a bloody key chest lamp |
-| Supplies | 80% | 3-5 of prayer potions, Saradomin brews, super restores, blighted overloads, ambrosia, and a stack of lobsters, swordfish or sharks |
-| Gear | 70% | 3-6 random pieces from the chest gear list, whether or not you can wear them |
-| Gear upgrades | 60% | 1-2 each of 2-3 of the world's boss tier catalyst and stones (see [Gear upgrades](#/upgrades)) |
+| Keys | 60% | 2-4 bloody keys, and 40% of the time a bloodier key too |
+| Trader's lamps | 35% | Each worth the same as a bloody key chest lamp |
+| Supplies | 80% | 3-5 of these, a few of each: prayer potions, Saradomin brews, super restores, blighted overloads, ambrosia, and lobsters, swordfish or sharks |
+| Gear | 70% | 3-6 random pieces of chest gear, wearable or not |
+| Gear upgrades | 60% | 1-2 each of 2-3 [upgrade items](#/upgrades) at the world's boss tier |
 
-It always sells something. Gear costs 3x what the trader pays for it. Upgrades cost 20 (bronze) to
-330 (dragon) blood money.
-
-The trader buys upgraded gear too, but its upgrades are lost once you have none of it left.
+Gear costs 3x what the trader would pay you for it. Upgrades cost 20 blood money (bronze) up to
+330 (dragon).
 
 ## The looting bag
 
-Every run starts with a looting bag. Use an item on it to put it in (one item, or a whole ammo
-stack), but only items the trader buys, and never upgraded gear. **Nothing comes out.** Sell the bag to the trader to sell
-everything inside at once. You get the empty bag back. Destroying it loses its contents, and it can't
-be dropped.
+Every run starts with one. Use an item on the bag to put it in, one at a time (ammo goes in as a
+whole stack). It only takes what the trader buys, and never upgraded gear.
+
+**Nothing comes back out.** Sell the bag to the trader to sell everything inside in one go; you
+get the empty bag back. It can't be dropped, and destroying it destroys what's inside.

@@ -1,7 +1,7 @@
 // Regenerates src/data/*.json from the game's source, so the wiki stays tied to it.
 // Run from the wiki folder (a submodule of rsrogue): `npm run sync`. The generated files are
 // committed, so the wiki builds on its own in CI without the game repo.
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, copyFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -162,4 +162,18 @@ const out = (name, data) =>
   out("gear.json", gear);
   for (const g of gear)
     console.log(g.style, g.sets.map((s) => s.name + ":" + s.items.length).join(", "), "|", g.singles.length, "singles");
+}
+
+// ---- Card sprites -------------------------------------------------------------------------
+// The chest menu's pixel-art cards (one per modifier, plus keys, styles and lamps), used as icons.
+{
+  const from = join(
+    root,
+    "content/minigames/roguelike/src/main/resources/org/rsmod/content/minigames/roguelike/sprites",
+  );
+  const to = join(here, "..", "public/sprites");
+  mkdirSync(to, { recursive: true });
+  const pngs = readdirSync(from).filter((f) => f.startsWith("roguelike_card_") && f.endsWith(".png"));
+  for (const f of pngs) copyFileSync(join(from, f), join(to, f.slice("roguelike_card_".length)));
+  console.log("sprites:", pngs.length);
 }
