@@ -25,7 +25,7 @@ Each catalyst adds to the gear's bonus multiplier, which starts at 1x:
 |---|---|---|---|---|---|---|---|
 | Adds | +0.1x | +0.2x | +0.3x | +0.5x | +0.75x | +1x | +1.5x |
 
-Five bronze catalysts make gear 1.5x as good. Only positive bonuses are multiplied: a platebody's
+Only positive bonuses are multiplied: a platebody's
 negative magic attack is never made worse.
 
 ### Stones
@@ -44,6 +44,14 @@ defence, or life points. Melee accuracy and melee defence add to stab, slash and
 
 Stones are added **before** catalysts multiply, so stones and catalysts on the same piece work
 together.
+
+### Spread them out
+
+Each upgrade made to the same piece is worth **80%** of the one before it, down to 10%: the first
+is worth its full value, the second 80%, the third 64%, and so on. Stone choices show what the
+stone will actually add. So it pays to upgrade every piece of gear you wear rather than pile
+everything onto your weapon: two steel catalysts on each of two pieces add +0.54x to each, while
+four on one piece add +0.88x in all.
 
 ### Good to know
 
