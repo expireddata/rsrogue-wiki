@@ -96,7 +96,7 @@
     "type": "Stamina",
     "name": "Maxed",
     "description": "Reach 99 Attack, Strength, Defence, Ranged, Magic and Prayer in one run.",
-    "reward": "You start every run with a max cape (cosmetic, no stats).",
+    "reward": "Adds a max cape to your bank (cosmetic, no stats).",
     "boss": null
   },
   {
@@ -486,7 +486,7 @@
     "type": "KillCount",
     "name": "Melee World Ender",
     "description": "Complete a full run with the melee starter kit.",
-    "reward": "You start every run with an infernal max cape (cosmetic, no stats).",
+    "reward": "Adds an infernal max cape to your bank (cosmetic, no stats).",
     "boss": null
   },
   {
@@ -496,7 +496,7 @@
     "type": "KillCount",
     "name": "Mage World Ender",
     "description": "Complete a full run with the magic starter kit.",
-    "reward": "You start every run with an imbued saradomin max cape (cosmetic, no stats).",
+    "reward": "Adds an imbued saradomin max cape to your bank (cosmetic, no stats).",
     "boss": null
   },
   {
@@ -506,7 +506,7 @@
     "type": "KillCount",
     "name": "Ranged World Ender",
     "description": "Complete a full run with the ranged starter kit.",
-    "reward": "You start every run with Dizana's max cape (cosmetic, no stats).",
+    "reward": "Adds Dizana's max cape to your bank (cosmetic, no stats).",
     "boss": null
   },
   {
@@ -516,7 +516,7 @@
     "type": "Restriction",
     "name": "The Ultimate Nudist",
     "description": "Complete a full run without using your starter key.",
-    "reward": "You start every run with a mythical max cape (cosmetic, no stats).",
+    "reward": "Adds a mythical max cape to your bank (cosmetic, no stats).",
     "boss": null
   }
 ]
