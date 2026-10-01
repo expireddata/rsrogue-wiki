@@ -156,15 +156,15 @@
       "name": "Blood pact",
       "rarity": "Rare",
       "category": "Risk/reward",
-      "summary": "Lose 1 hitpoint every 3/2/1 ticks (by danger level), heal all the damage you deal",
-      "body": "- You lose **1** hitpoint every **3** game ticks at danger levels 1-2, every **2** at danger\n  levels 3-4, and every tick from danger level 5. The drain never takes you below 1 hitpoint, and\n  it waits while the run is paused (before it starts, and after a boss is defeated).\n- Every hit you deal heals you for **100%** of its damage, up to your hitpoints level.\n- Can only be held once.\n- Combine with [Berserker](#berserker) for a high-risk damage build."
+      "summary": "Lose 1 life point a tick per stack, or heal at that rate from a pool of the damage you deal",
+      "body": "- Every game tick, you lose **1** life point per stack. The drain never takes you below 1 life\n  point.\n- Every point of damage you deal goes into a pool, which holds at most your max life points. While\n  the pool has any, the tick heals you instead: **1** life point per stack, taken from the pool.\n  The pool is used up at the same rate even at full health, so it cannot be banked.\n- So healing comes back over time, not with the hit: a hit of 40 at 1 stack is 40 ticks (24\n  seconds) of healing.\n- It waits while the run is paused (before it starts, and after a boss is defeated). Dying empties\n  the pool.\n- Stacks up to **5** times.\n- Combine with [Berserker](#berserker) for a high-risk damage build."
     },
     {
       "name": "Maxed, but at what cost",
       "rarity": "Special",
       "category": "Special",
       "summary": "Level 99 in every combat skill, but no more xp",
-      "body": "- Instantly sets Attack, Strength, Defence, Hitpoints, Ranged, Magic and Prayer to level **99**,\n  fully restored.\n- From then on, **you gain no xp** from any source for the rest of the run, so no skill can go\n  past 99 (and chests stop offering xp lamps and xp rate boosts).\n- Can only be held once."
+      "body": "- Instantly sets Attack, Strength, Defence, Hitpoints, Ranged, Magic and Prayer to level **99**,\n  fully restored.\n- From then on, **you gain no xp** from any source for the rest of the run, so no skill can go\n  past 99 (and chests stop offering xp lamps and xp rate boosts).\n- Only offered from world **3**. Taken in world 1, it put a player far ahead of every boss for\n  the rest of the run.\n- Can only be held once."
     },
     {
       "name": "Draw your sword",
