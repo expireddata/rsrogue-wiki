@@ -49,10 +49,10 @@ const steps: { sprite: string; title: string; text: string }[] = [
 ];
 
 const worlds = [
-  { n: 1, where: "Early map", who: "Jad, Graardor, the Rabbit or Scurrius" },
-  { n: 2, where: "Early map", who: "Jad, Graardor, the Rabbit or Scurrius" },
-  { n: 3, where: "Late map", who: "Nex joins the pool" },
-  { n: 4, where: "Late map", who: "Nex joins the pool" },
+  { n: 1, where: "Early map", who: "Jad, Graardor, the Rabbit, Scurrius, the Chaos Elemental, a God Wars general or the Kalphite Queen" },
+  { n: 2, where: "Early map", who: "The Dagannoth Kings join the pool" },
+  { n: 3, where: "Late map", who: "Nex, the Hydra, Araxxor, Phosani's Nightmare, the Hunllef and Vardorvis join" },
+  { n: 4, where: "Late map", who: "Any boss you haven't fought yet" },
   { n: 5, where: "King Black Dragon's lair", who: "Verzik Vitur. Beat her to finish the run.", final: true },
 ];
 
