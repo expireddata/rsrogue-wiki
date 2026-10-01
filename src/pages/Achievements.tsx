@@ -22,6 +22,17 @@ const bossNames: Record<string, string> = {
   Scurrius: "Scurrius",
   Nex: "Nex",
   Verzik: "Verzik Vitur",
+  AlchemicalHydra: "Alchemical Hydra",
+  Araxxor: "Araxxor",
+  ChaosElemental: "Chaos Elemental",
+  CommanderZilyana: "Commander Zilyana",
+  Kreearra: "Kree'arra",
+  KrilTsutsaroth: "K'ril Tsutsaroth",
+  DagannothKings: "Dagannoth Kings",
+  KalphiteQueen: "Kalphite Queen",
+  PhosanisNightmare: "Phosani's Nightmare",
+  CorruptedHunllef: "Corrupted Hunllef",
+  Vardorvis: "Vardorvis",
 };
 const tiers = Object.keys(points);
 
@@ -60,8 +71,10 @@ export default function Achievements() {
           Novice (1 kill), Adept (5) and Veteran (10) tasks.
         </li>
         <li>
-          <b>Finish a boss's whole set</b> and its pet follows you every run: TzRek-Jad, Scurrius's
-          pet, Nexling or Lil' Zik.
+          <b>Finish a boss's whole set</b> and its pet is added to your bank: TzRek-Jad, General
+          Graardor Jr., Scurry, Nexling, Lil' Zik, Ikkle Hydra, Nid, Chaos Elemental Jr., Zilyana
+          Jr., Kree'arra Jr., K'ril Tsutsaroth Jr., all three Dagannoth Kings' pets, the Kalphite
+          Princess, Little Nightmare, Corrupted Youngllef or Butch.
         </li>
         <li>
           <b>Finish every task</b> to start every run with a Tzkal slayer helmet.

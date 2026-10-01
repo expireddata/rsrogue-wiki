@@ -518,5 +518,825 @@
     "description": "Complete a full run without using your starter key.",
     "reward": "Adds a mythical max cape to your bank (cosmetic, no stats).",
     "boss": null
+  },
+  {
+    "id": "HydraNovice",
+    "bit": 52,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Hydra Novice",
+    "description": "Kill the Alchemical Hydra once.",
+    "reward": null,
+    "boss": "AlchemicalHydra"
+  },
+  {
+    "id": "HydraAdept",
+    "bit": 53,
+    "tier": "Master",
+    "type": "KillCount",
+    "name": "Hydra Adept",
+    "description": "Kill the Alchemical Hydra 5 times.",
+    "reward": null,
+    "boss": "AlchemicalHydra"
+  },
+  {
+    "id": "HydraVeteran",
+    "bit": 54,
+    "tier": "Grandmaster",
+    "type": "KillCount",
+    "name": "Hydra Veteran",
+    "description": "Kill the Alchemical Hydra 10 times.",
+    "reward": null,
+    "boss": "AlchemicalHydra"
+  },
+  {
+    "id": "CleanFloors",
+    "bit": 55,
+    "tier": "Elite",
+    "type": "Mechanical",
+    "name": "Clean floors",
+    "description": "Kill the Alchemical Hydra without ever standing on its poison.",
+    "reward": null,
+    "boss": "AlchemicalHydra"
+  },
+  {
+    "id": "RightHeadRightPrayer",
+    "bit": 56,
+    "tier": "Master",
+    "type": "Mechanical",
+    "name": "Right head, right prayer",
+    "description": "Kill the Alchemical Hydra without taking a hit you weren't praying against.",
+    "reward": null,
+    "boss": "AlchemicalHydra"
+  },
+  {
+    "id": "SoloHydra",
+    "bit": 57,
+    "tier": "Master",
+    "type": "Restriction",
+    "name": "Solo Hydra",
+    "description": "Kill the Alchemical Hydra in a solo run.",
+    "reward": null,
+    "boss": "AlchemicalHydra"
+  },
+  {
+    "id": "PerfectHydra",
+    "bit": 58,
+    "tier": "Grandmaster",
+    "type": "Perfection",
+    "name": "Perfect Hydra",
+    "description": "Kill the Alchemical Hydra with nobody on your team taking a hit they weren't praying against, or standing on its poison.",
+    "reward": null,
+    "boss": "AlchemicalHydra"
+  },
+  {
+    "id": "AlchemicalSpeedrunner",
+    "bit": 59,
+    "tier": "Master",
+    "type": "Speed",
+    "name": "Alchemical speedrunner",
+    "description": "Kill the Alchemical Hydra in under a minute from summoning it.",
+    "reward": null,
+    "boss": "AlchemicalHydra"
+  },
+  {
+    "id": "AraxxorNovice",
+    "bit": 60,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Araxxor Novice",
+    "description": "Kill Araxxor once.",
+    "reward": null,
+    "boss": "Araxxor"
+  },
+  {
+    "id": "AraxxorAdept",
+    "bit": 61,
+    "tier": "Master",
+    "type": "KillCount",
+    "name": "Araxxor Adept",
+    "description": "Kill Araxxor 5 times.",
+    "reward": null,
+    "boss": "Araxxor"
+  },
+  {
+    "id": "AraxxorVeteran",
+    "bit": 62,
+    "tier": "Grandmaster",
+    "type": "KillCount",
+    "name": "Araxxor Veteran",
+    "description": "Kill Araxxor 10 times.",
+    "reward": null,
+    "boss": "Araxxor"
+  },
+  {
+    "id": "AcidReflux",
+    "bit": 63,
+    "tier": "Elite",
+    "type": "Mechanical",
+    "name": "Acid reflux",
+    "description": "Kill Araxxor without ever standing on his acid.",
+    "reward": null,
+    "boss": "Araxxor"
+  },
+  {
+    "id": "EightLegsNoSnacks",
+    "bit": 64,
+    "tier": "Master",
+    "type": "Restriction",
+    "name": "Eight legs, no snacks",
+    "description": "Kill Araxxor without eating any food during the fight.",
+    "reward": null,
+    "boss": "Araxxor"
+  },
+  {
+    "id": "Arachnophobe",
+    "bit": 65,
+    "tier": "Master",
+    "type": "Restriction",
+    "name": "Arachnophobe",
+    "description": "Kill Araxxor without ever attacking him from next to him.",
+    "reward": null,
+    "boss": "Araxxor"
+  },
+  {
+    "id": "PerfectAraxxor",
+    "bit": 66,
+    "tier": "Grandmaster",
+    "type": "Perfection",
+    "name": "Perfect Araxxor",
+    "description": "Kill Araxxor with nobody on your team hit by his acid splash, or standing on his acid.",
+    "reward": null,
+    "boss": "Araxxor"
+  },
+  {
+    "id": "AraxxorSpeedrunner",
+    "bit": 67,
+    "tier": "Master",
+    "type": "Speed",
+    "name": "Araxxor speedrunner",
+    "description": "Kill Araxxor in under a minute from summoning him.",
+    "reward": null,
+    "boss": "Araxxor"
+  },
+  {
+    "id": "ChaosNovice",
+    "bit": 68,
+    "tier": "Medium",
+    "type": "KillCount",
+    "name": "Chaos Novice",
+    "description": "Kill the Chaos Elemental once.",
+    "reward": null,
+    "boss": "ChaosElemental"
+  },
+  {
+    "id": "ChaosAdept",
+    "bit": 69,
+    "tier": "Hard",
+    "type": "KillCount",
+    "name": "Chaos Adept",
+    "description": "Kill the Chaos Elemental 5 times.",
+    "reward": null,
+    "boss": "ChaosElemental"
+  },
+  {
+    "id": "ChaosVeteran",
+    "bit": 70,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Chaos Veteran",
+    "description": "Kill the Chaos Elemental 10 times.",
+    "reward": null,
+    "boss": "ChaosElemental"
+  },
+  {
+    "id": "DisarmedAndDangerous",
+    "bit": 71,
+    "tier": "Hard",
+    "type": "Mechanical",
+    "name": "Disarmed and dangerous",
+    "description": "Finish off the Chaos Elemental with an unarmed hit.",
+    "reward": null,
+    "boss": "ChaosElemental"
+  },
+  {
+    "id": "ReturnToSender",
+    "bit": 72,
+    "tier": "Hard",
+    "type": "Mechanical",
+    "name": "Return to sender",
+    "description": "Kill the Chaos Elemental after hitting it within 3 ticks of it teleporting you away.",
+    "reward": null,
+    "boss": "ChaosElemental"
+  },
+  {
+    "id": "OrderFromChaos",
+    "bit": 73,
+    "tier": "Elite",
+    "type": "Perfection",
+    "name": "Order from chaos",
+    "description": "Kill the Chaos Elemental without taking any damage from it.",
+    "reward": null,
+    "boss": "ChaosElemental"
+  },
+  {
+    "id": "ChaosSpeedrunner",
+    "bit": 74,
+    "tier": "Elite",
+    "type": "Speed",
+    "name": "Chaos speedrunner",
+    "description": "Kill the Chaos Elemental in under 30 seconds from summoning it.",
+    "reward": null,
+    "boss": "ChaosElemental"
+  },
+  {
+    "id": "ZilyanaNovice",
+    "bit": 75,
+    "tier": "Medium",
+    "type": "KillCount",
+    "name": "Zilyana Novice",
+    "description": "Kill Commander Zilyana once.",
+    "reward": null,
+    "boss": "CommanderZilyana"
+  },
+  {
+    "id": "ZilyanaAdept",
+    "bit": 76,
+    "tier": "Hard",
+    "type": "KillCount",
+    "name": "Zilyana Adept",
+    "description": "Kill Commander Zilyana 5 times.",
+    "reward": null,
+    "boss": "CommanderZilyana"
+  },
+  {
+    "id": "ZilyanaVeteran",
+    "bit": 77,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Zilyana Veteran",
+    "description": "Kill Commander Zilyana 10 times.",
+    "reward": null,
+    "boss": "CommanderZilyana"
+  },
+  {
+    "id": "KeepingPace",
+    "bit": 78,
+    "tier": "Elite",
+    "type": "Mechanical",
+    "name": "Keeping pace",
+    "description": "Kill Commander Zilyana without leaving her melee distance.",
+    "reward": null,
+    "boss": "CommanderZilyana"
+  },
+  {
+    "id": "Godless",
+    "bit": 79,
+    "tier": "Elite",
+    "type": "Restriction",
+    "name": "Godless",
+    "description": "Kill Commander Zilyana without using any protection prayers.",
+    "reward": null,
+    "boss": "CommanderZilyana"
+  },
+  {
+    "id": "SaradominsBlessing",
+    "bit": 80,
+    "tier": "Hard",
+    "type": "Mechanical",
+    "name": "Saradomin's blessing",
+    "description": "Finish off Commander Zilyana with a special attack.",
+    "reward": null,
+    "boss": "CommanderZilyana"
+  },
+  {
+    "id": "ZilyanaSpeedrunner",
+    "bit": 81,
+    "tier": "Master",
+    "type": "Speed",
+    "name": "Zilyana speedrunner",
+    "description": "Kill Commander Zilyana in under 20 seconds from summoning her.",
+    "reward": null,
+    "boss": "CommanderZilyana"
+  },
+  {
+    "id": "KreearraNovice",
+    "bit": 82,
+    "tier": "Medium",
+    "type": "KillCount",
+    "name": "Kree'arra Novice",
+    "description": "Kill Kree'arra once.",
+    "reward": null,
+    "boss": "Kreearra"
+  },
+  {
+    "id": "KreearraAdept",
+    "bit": 83,
+    "tier": "Hard",
+    "type": "KillCount",
+    "name": "Kree'arra Adept",
+    "description": "Kill Kree'arra 5 times.",
+    "reward": null,
+    "boss": "Kreearra"
+  },
+  {
+    "id": "KreearraVeteran",
+    "bit": 84,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Kree'arra Veteran",
+    "description": "Kill Kree'arra 10 times.",
+    "reward": null,
+    "boss": "Kreearra"
+  },
+  {
+    "id": "HalberdHero",
+    "bit": 85,
+    "tier": "Elite",
+    "type": "Restriction",
+    "name": "Halberd hero",
+    "description": "Kill Kree'arra, only ever hitting him with a halberd.",
+    "reward": null,
+    "boss": "Kreearra"
+  },
+  {
+    "id": "Grounded",
+    "bit": 86,
+    "tier": "Elite",
+    "type": "Mechanical",
+    "name": "Grounded",
+    "description": "Kill Kree'arra without ever being knocked back by him.",
+    "reward": null,
+    "boss": "Kreearra"
+  },
+  {
+    "id": "Plucked",
+    "bit": 87,
+    "tier": "Hard",
+    "type": "Mechanical",
+    "name": "Plucked",
+    "description": "Finish off Kree'arra with a special attack.",
+    "reward": null,
+    "boss": "Kreearra"
+  },
+  {
+    "id": "KreearraSpeedrunner",
+    "bit": 88,
+    "tier": "Master",
+    "type": "Speed",
+    "name": "Kree'arra speedrunner",
+    "description": "Kill Kree'arra in under 25 seconds from summoning him.",
+    "reward": null,
+    "boss": "Kreearra"
+  },
+  {
+    "id": "KrilNovice",
+    "bit": 89,
+    "tier": "Medium",
+    "type": "KillCount",
+    "name": "K'ril Novice",
+    "description": "Kill K'ril Tsutsaroth once.",
+    "reward": null,
+    "boss": "KrilTsutsaroth"
+  },
+  {
+    "id": "KrilAdept",
+    "bit": 90,
+    "tier": "Hard",
+    "type": "KillCount",
+    "name": "K'ril Adept",
+    "description": "Kill K'ril Tsutsaroth 5 times.",
+    "reward": null,
+    "boss": "KrilTsutsaroth"
+  },
+  {
+    "id": "KrilVeteran",
+    "bit": 91,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "K'ril Veteran",
+    "description": "Kill K'ril Tsutsaroth 10 times.",
+    "reward": null,
+    "boss": "KrilTsutsaroth"
+  },
+  {
+    "id": "Demonbane",
+    "bit": 92,
+    "tier": "Hard",
+    "type": "Restriction",
+    "name": "Demonbane",
+    "description": "Kill K'ril Tsutsaroth with every hit that damages him coming from a Demonbane spell.",
+    "reward": null,
+    "boss": "KrilTsutsaroth"
+  },
+  {
+    "id": "PrayerWhatPrayer",
+    "bit": 93,
+    "tier": "Elite",
+    "type": "Mechanical",
+    "name": "Prayer, what prayer?",
+    "description": "Kill K'ril Tsutsaroth without your prayer points ever running out.",
+    "reward": null,
+    "boss": "KrilTsutsaroth"
+  },
+  {
+    "id": "Faithless",
+    "bit": 94,
+    "tier": "Master",
+    "type": "Restriction",
+    "name": "Faithless",
+    "description": "Kill K'ril Tsutsaroth without using any protection prayers.",
+    "reward": null,
+    "boss": "KrilTsutsaroth"
+  },
+  {
+    "id": "KrilSpeedrunner",
+    "bit": 95,
+    "tier": "Master",
+    "type": "Speed",
+    "name": "K'ril speedrunner",
+    "description": "Kill K'ril Tsutsaroth in under 25 seconds from summoning him.",
+    "reward": null,
+    "boss": "KrilTsutsaroth"
+  },
+  {
+    "id": "KingsNovice",
+    "bit": 96,
+    "tier": "Hard",
+    "type": "KillCount",
+    "name": "Kings Novice",
+    "description": "Kill the Dagannoth Kings once.",
+    "reward": null,
+    "boss": "DagannothKings"
+  },
+  {
+    "id": "KingsAdept",
+    "bit": 97,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Kings Adept",
+    "description": "Kill the Dagannoth Kings 5 times.",
+    "reward": null,
+    "boss": "DagannothKings"
+  },
+  {
+    "id": "KingsVeteran",
+    "bit": 98,
+    "tier": "Master",
+    "type": "KillCount",
+    "name": "Kings Veteran",
+    "description": "Kill the Dagannoth Kings 10 times.",
+    "reward": null,
+    "boss": "DagannothKings"
+  },
+  {
+    "id": "RightToolForTheJob",
+    "bit": 99,
+    "tier": "Elite",
+    "type": "Restriction",
+    "name": "Right tool for the job",
+    "description": "Kill the Dagannoth Kings, only ever hitting each king with the style it is weak to.",
+    "reward": null,
+    "boss": "DagannothKings"
+  },
+  {
+    "id": "Stubborn",
+    "bit": 100,
+    "tier": "Grandmaster",
+    "type": "Restriction",
+    "name": "Stubborn",
+    "description": "Kill all three Dagannoth Kings using only one combat style.",
+    "reward": null,
+    "boss": "DagannothKings"
+  },
+  {
+    "id": "FlickOfTheWrist",
+    "bit": 101,
+    "tier": "Master",
+    "type": "Perfection",
+    "name": "Flick of the wrist",
+    "description": "Kill the Dagannoth Kings without taking damage from Dagannoth Prime or Supreme.",
+    "reward": null,
+    "boss": "DagannothKings"
+  },
+  {
+    "id": "LongLiveTheKings",
+    "bit": 102,
+    "tier": "Elite",
+    "type": "Mechanical",
+    "name": "Long live the kings",
+    "description": "Kill all three Dagannoth Kings within 10 ticks of each other.",
+    "reward": null,
+    "boss": "DagannothKings"
+  },
+  {
+    "id": "KalphiteNovice",
+    "bit": 103,
+    "tier": "Medium",
+    "type": "KillCount",
+    "name": "Kalphite Novice",
+    "description": "Kill the Kalphite Queen once.",
+    "reward": null,
+    "boss": "KalphiteQueen"
+  },
+  {
+    "id": "KalphiteAdept",
+    "bit": 104,
+    "tier": "Hard",
+    "type": "KillCount",
+    "name": "Kalphite Adept",
+    "description": "Kill the Kalphite Queen 5 times.",
+    "reward": null,
+    "boss": "KalphiteQueen"
+  },
+  {
+    "id": "KalphiteVeteran",
+    "bit": 105,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Kalphite Veteran",
+    "description": "Kill the Kalphite Queen 10 times.",
+    "reward": null,
+    "boss": "KalphiteQueen"
+  },
+  {
+    "id": "AgainstTheGrain",
+    "bit": 106,
+    "tier": "Master",
+    "type": "Restriction",
+    "name": "Against the grain",
+    "description": "Kill the Kalphite Queen with every hit on her using the style she is praying against.",
+    "reward": null,
+    "boss": "KalphiteQueen"
+  },
+  {
+    "id": "Metamorphosis",
+    "bit": 107,
+    "tier": "Elite",
+    "type": "Speed",
+    "name": "Metamorphosis",
+    "description": "Kill the Kalphite Queen's second form within 20 seconds of it rising.",
+    "reward": null,
+    "boss": "KalphiteQueen"
+  },
+  {
+    "id": "Untouchable",
+    "bit": 108,
+    "tier": "Elite",
+    "type": "Perfection",
+    "name": "Untouchable",
+    "description": "Kill the Kalphite Queen without taking any damage from either form.",
+    "reward": null,
+    "boss": "KalphiteQueen"
+  },
+  {
+    "id": "BugSwatter",
+    "bit": 109,
+    "tier": "Hard",
+    "type": "Mechanical",
+    "name": "Bug swatter",
+    "description": "Finish off both forms of the Kalphite Queen with your special attack.",
+    "reward": null,
+    "boss": "KalphiteQueen"
+  },
+  {
+    "id": "NightmareNovice",
+    "bit": 110,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Nightmare Novice",
+    "description": "Kill Phosani's Nightmare once.",
+    "reward": null,
+    "boss": "PhosanisNightmare"
+  },
+  {
+    "id": "NightmareAdept",
+    "bit": 111,
+    "tier": "Master",
+    "type": "KillCount",
+    "name": "Nightmare Adept",
+    "description": "Kill Phosani's Nightmare 5 times.",
+    "reward": null,
+    "boss": "PhosanisNightmare"
+  },
+  {
+    "id": "NightmareVeteran",
+    "bit": 112,
+    "tier": "Grandmaster",
+    "type": "KillCount",
+    "name": "Nightmare Veteran",
+    "description": "Kill Phosani's Nightmare 10 times.",
+    "reward": null,
+    "boss": "PhosanisNightmare"
+  },
+  {
+    "id": "WakeUpCall",
+    "bit": 113,
+    "tier": "Master",
+    "type": "Mechanical",
+    "name": "Wake-up call",
+    "description": "Kill Phosani's Nightmare without taking a hit you weren't praying against.",
+    "reward": null,
+    "boss": "PhosanisNightmare"
+  },
+  {
+    "id": "Insomniac",
+    "bit": 114,
+    "tier": "Master",
+    "type": "Restriction",
+    "name": "Insomniac",
+    "description": "Kill Phosani's Nightmare without eating any food during the fight.",
+    "reward": null,
+    "boss": "PhosanisNightmare"
+  },
+  {
+    "id": "LucidDreaming",
+    "bit": 115,
+    "tier": "Master",
+    "type": "Restriction",
+    "name": "Lucid dreaming",
+    "description": "Kill Phosani's Nightmare in a solo run.",
+    "reward": null,
+    "boss": "PhosanisNightmare"
+  },
+  {
+    "id": "PerfectNightmare",
+    "bit": 116,
+    "tier": "Grandmaster",
+    "type": "Perfection",
+    "name": "Perfect Nightmare",
+    "description": "Kill Phosani's Nightmare with nobody on your team taking a hit they weren't praying against.",
+    "reward": null,
+    "boss": "PhosanisNightmare"
+  },
+  {
+    "id": "SweetDreams",
+    "bit": 117,
+    "tier": "Master",
+    "type": "Speed",
+    "name": "Sweet dreams",
+    "description": "Kill Phosani's Nightmare in under a minute from summoning her.",
+    "reward": null,
+    "boss": "PhosanisNightmare"
+  },
+  {
+    "id": "HunllefNovice",
+    "bit": 118,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Hunllef Novice",
+    "description": "Kill the Corrupted Hunllef once.",
+    "reward": null,
+    "boss": "CorruptedHunllef"
+  },
+  {
+    "id": "HunllefAdept",
+    "bit": 119,
+    "tier": "Master",
+    "type": "KillCount",
+    "name": "Hunllef Adept",
+    "description": "Kill the Corrupted Hunllef 5 times.",
+    "reward": null,
+    "boss": "CorruptedHunllef"
+  },
+  {
+    "id": "HunllefVeteran",
+    "bit": 120,
+    "tier": "Grandmaster",
+    "type": "KillCount",
+    "name": "Hunllef Veteran",
+    "description": "Kill the Corrupted Hunllef 10 times.",
+    "reward": null,
+    "boss": "CorruptedHunllef"
+  },
+  {
+    "id": "ThreeTwoOneSwitch",
+    "bit": 121,
+    "tier": "Master",
+    "type": "Mechanical",
+    "name": "Three, two, one, switch",
+    "description": "Kill the Corrupted Hunllef without taking a hit you weren't praying against.",
+    "reward": null,
+    "boss": "CorruptedHunllef"
+  },
+  {
+    "id": "EgniolDiet",
+    "bit": 122,
+    "tier": "Master",
+    "type": "Restriction",
+    "name": "Egniol diet",
+    "description": "Kill the Corrupted Hunllef without drinking any potions during the fight.",
+    "reward": null,
+    "boss": "CorruptedHunllef"
+  },
+  {
+    "id": "EyeOfTheStorm",
+    "bit": 123,
+    "tier": "Elite",
+    "type": "Mechanical",
+    "name": "Eye of the storm",
+    "description": "Kill the Corrupted Hunllef while his tornadoes are out.",
+    "reward": null,
+    "boss": "CorruptedHunllef"
+  },
+  {
+    "id": "PerfectHunllef",
+    "bit": 124,
+    "tier": "Grandmaster",
+    "type": "Perfection",
+    "name": "Perfect Hunllef",
+    "description": "Kill the Corrupted Hunllef with nobody on your team taking a hit they weren't praying against, a stomp or a tornado hit.",
+    "reward": null,
+    "boss": "CorruptedHunllef"
+  },
+  {
+    "id": "CrystallineSpeedrunner",
+    "bit": 125,
+    "tier": "Master",
+    "type": "Speed",
+    "name": "Crystalline speedrunner",
+    "description": "Kill the Corrupted Hunllef in under a minute from summoning him.",
+    "reward": null,
+    "boss": "CorruptedHunllef"
+  },
+  {
+    "id": "VardorvisNovice",
+    "bit": 126,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "Vardorvis Novice",
+    "description": "Kill Vardorvis once.",
+    "reward": null,
+    "boss": "Vardorvis"
+  },
+  {
+    "id": "VardorvisAdept",
+    "bit": 127,
+    "tier": "Master",
+    "type": "KillCount",
+    "name": "Vardorvis Adept",
+    "description": "Kill Vardorvis 5 times.",
+    "reward": null,
+    "boss": "Vardorvis"
+  },
+  {
+    "id": "VardorvisVeteran",
+    "bit": 128,
+    "tier": "Grandmaster",
+    "type": "KillCount",
+    "name": "Vardorvis Veteran",
+    "description": "Kill Vardorvis 10 times.",
+    "reward": null,
+    "boss": "Vardorvis"
+  },
+  {
+    "id": "AxeEnthusiast",
+    "bit": 129,
+    "tier": "Elite",
+    "type": "Mechanical",
+    "name": "Axe enthusiast",
+    "description": "Kill Vardorvis without being hit by one of his axes.",
+    "reward": null,
+    "boss": "Vardorvis"
+  },
+  {
+    "id": "HoldYourGround",
+    "bit": 130,
+    "tier": "Master",
+    "type": "Mechanical",
+    "name": "Hold your ground",
+    "description": "Kill Vardorvis without leaving his melee distance.",
+    "reward": null,
+    "boss": "Vardorvis"
+  },
+  {
+    "id": "SoloVardorvis",
+    "bit": 131,
+    "tier": "Master",
+    "type": "Restriction",
+    "name": "Solo Vardorvis",
+    "description": "Kill Vardorvis in a solo run.",
+    "reward": null,
+    "boss": "Vardorvis"
+  },
+  {
+    "id": "PerfectVardorvis",
+    "bit": 132,
+    "tier": "Grandmaster",
+    "type": "Perfection",
+    "name": "Perfect Vardorvis",
+    "description": "Kill Vardorvis with nobody on your team hit by an axe, or by a hit they weren't praying against.",
+    "reward": null,
+    "boss": "Vardorvis"
+  },
+  {
+    "id": "VardorvisSpeedrunner",
+    "bit": 133,
+    "tier": "Master",
+    "type": "Speed",
+    "name": "Vardorvis speedrunner",
+    "description": "Kill Vardorvis in under 45 seconds from summoning him.",
+    "reward": null,
+    "boss": "Vardorvis"
   }
 ]

@@ -8,7 +8,7 @@ and pop-up.
 
 | Tab | Pages |
 |---|---|
-| Bosses | Shared boss drops, plus pages for TzTok-Jad, Scurrius, Nex and Verzik Vitur (their pets) |
+| Bosses | Shared boss drops, plus a page for every boss with a pet (all but the Rabbit), listing its pets |
 | Monsters | Melee, ranged and magic equipment, supplies and keys |
 | Chests | Starter kits (plain and trimmed), the arcane grimoire, supply lamp and Shieldbearer's wooden shield |
 | Gear | Chest gear by style, and combined jewellery and armour |
