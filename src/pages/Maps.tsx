@@ -2,7 +2,7 @@ import Md from "../Md";
 
 type GameMap = {
   name: string;
-  pool: "Early" | "Late" | "Final";
+  pool: "Early" | "Late" | "Final" | "Secret";
   roster: string;
   notes: string;
 };
@@ -58,6 +58,12 @@ const maps: GameMap[] = [
     roster: "Nothing spawns. Only Verzik.",
     notes: "World 5 only. Verzik Vitur's altar waits in the middle of the lair.",
   },
+  {
+    name: "The Inferno",
+    pool: "Secret",
+    roster: "Nothing spawns. Only TzKal-Zuk and the creatures he calls.",
+    notes: "Never picked at random. Some say the TzHaar city hides a way down.",
+  },
 ];
 
 const intro = `
@@ -77,14 +83,14 @@ walkable tiles (12 to 100), in sheltered clusters of 3-6, indoors where there's 
 also has **5 supply crates**, spread far apart.
 `;
 
-const poolLabel = { Early: "worlds 1-2", Late: "worlds 3-4", Final: "world 5" };
+const poolLabel = { Early: "worlds 1-2", Late: "worlds 3-4", Final: "world 5", Secret: "???" };
 
 export default function Maps() {
   return (
     <>
       <h1>Maps</h1>
       <Md>{intro}</Md>
-      {(["Early", "Late", "Final"] as const).map((pool) => (
+      {(["Early", "Late", "Final", "Secret"] as const).map((pool) => (
         <section key={pool}>
           <h2>
             {pool} maps <span className="muted small">{poolLabel[pool]}</span>

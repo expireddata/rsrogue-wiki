@@ -240,6 +240,23 @@ const bosses: Boss[] = [
     howTo:
       "Keep her on her tiles and pray against her projectiles. In the last 20%, never stand still: tornadoes walk to where you were, so a moving target is never caught.",
   },
+  {
+    name: "TzKal-Zuk",
+    worlds: "Secret",
+    hook: "Some runs never reach the lair. The ones that find the Inferno meet him instead.",
+    hitpoints: 240,
+    maxHits: "251 fireball (it kills), 10 healer sparks, plus his JalTok-Jad, Jal-Xil and Jal-Zek",
+    attacks: [
+      "He is already up when you arrive, and there is no altar. Every 10 ticks he throws a **fireball at every player**. It goes through prayers, and kills anyone out in the open.",
+      "The **Ancestral Glyph** walks back and forth along the lava in front of him, waiting at each edge. Only the 5x3 area right behind it (a tile past each side, three rows back) is safe.",
+      "A **Jal-Xil and Jal-Zek** come every 3.5 minutes and shoot at the glyph until you attack them. Then they come for you. If the glyph breaks, nothing stops the fireballs.",
+      "At 40% **JalTok-Jad** rises, and his magic and ranged hit everyone, like TzTok-Jad's.",
+      "At 20% he **enrages**: fireballs every 7 ticks, and 4 healers on the lava heal him until you hit them. A hit healer sparks its attacker's 3x3 area instead.",
+      "He sits past the lava, so only ranged and magic reach him.",
+    ],
+    howTo:
+      "Move with the glyph as a team, kill each set before it breaks the glyph, and hit the healers fast. Bring a bow or a staff.",
+  },
 ];
 
 const intro = `
