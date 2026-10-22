@@ -1338,5 +1338,75 @@
     "description": "Kill Vardorvis in under 45 seconds from summoning him.",
     "reward": null,
     "boss": "Vardorvis"
+  },
+  {
+    "id": "ZukNovice",
+    "bit": 134,
+    "tier": "Elite",
+    "type": "KillCount",
+    "name": "TzKal-Zuk Novice",
+    "description": "Kill TzKal-Zuk once.",
+    "reward": null,
+    "boss": "TzKalZuk"
+  },
+  {
+    "id": "ZukAdept",
+    "bit": 135,
+    "tier": "Master",
+    "type": "KillCount",
+    "name": "TzKal-Zuk Adept",
+    "description": "Kill TzKal-Zuk 5 times.",
+    "reward": null,
+    "boss": "TzKalZuk"
+  },
+  {
+    "id": "ZukVeteran",
+    "bit": 136,
+    "tier": "Grandmaster",
+    "type": "KillCount",
+    "name": "TzKal-Zuk Veteran",
+    "description": "Kill TzKal-Zuk 10 times.",
+    "reward": null,
+    "boss": "TzKalZuk"
+  },
+  {
+    "id": "BehindTheGlyph",
+    "bit": 137,
+    "tier": "Master",
+    "type": "Mechanical",
+    "name": "Behind the glyph",
+    "description": "Kill TzKal-Zuk without being hit by one of his fireballs.",
+    "reward": null,
+    "boss": "TzKalZuk"
+  },
+  {
+    "id": "SoloZuk",
+    "bit": 138,
+    "tier": "Grandmaster",
+    "type": "Restriction",
+    "name": "Solo Zuk",
+    "description": "Kill TzKal-Zuk in a solo run.",
+    "reward": null,
+    "boss": "TzKalZuk"
+  },
+  {
+    "id": "PerfectZuk",
+    "bit": 139,
+    "tier": "Grandmaster",
+    "type": "Perfection",
+    "name": "Perfect Zuk",
+    "description": "Kill TzKal-Zuk with nobody on your team hit by a fireball, and the Ancestral Glyph never broken.",
+    "reward": null,
+    "boss": "TzKalZuk"
+  },
+  {
+    "id": "ZukSpeedrunner",
+    "bit": 140,
+    "tier": "Grandmaster",
+    "type": "Speed",
+    "name": "Inferno speedrunner",
+    "description": "Kill TzKal-Zuk in under 3 minutes from entering the Inferno.",
+    "reward": null,
+    "boss": "TzKalZuk"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "how": "- **Getting them.** Keys dropped by npcs open chests. Each chest offers three rewards, and each\n  one is independently a modifier, a piece of gear or an xp reward, so one chest can offer three\n  modifiers. Selecting a card explains it in the chatbox, and the menu's status line shows how\n  many stacks you already hold. Only key chests give modifiers: supply crates never do.\n- **Rarity and keys.** Every modifier is **common** (steady, smaller effects), **rare**\n  (build-defining) or **special** (run-defining, often with a catch). The key decides the odds:\n\n  | | Bloody key | Bloodier key |\n  |---|---|---|\n  | Drop chance (per kill) | 24% | 6% |\n  | Option is a modifier / gear / xp | 35% / 15% / 50% | 45% / 30% / 25% |\n  | Modifier is common / rare / special | 78% / 20% / 2% | 25% / 60% / 15% |\n  | XP lamp (per danger level, times your xp rate) | 2,000 xp | 5,000 xp |\n  | XP rate boost | +20x | +50x |\n\n  Gear options are always gear you can wear now. Your starter style is 6 times as likely as each\n  other style (75% vs 12.5%). Mid-tier gear (granite, obsidian, the moon sets, the barrows sets,\n  Karil's, Morrigan's, armadyl, crystal, masori, Ahrim's, Zuriel's, elder chaos and virtus) comes\n  as a **whole set**, best-in-slot gear one piece at a time. Ranged weapons come with 100 ammo.\n  XP lamps offer every combat skill, your style's first.\n- **Stacking.** Taking a modifier you already hold adds a stack. Unless stated otherwise, every\n  number below is **per stack** and adds up linearly (two stacks of Recoil reflect 20%). Most\n  specials can only be held once. Soaking and Speed demon go up to rank 3, each rank with its own\n  number. Chests stop offering a modifier once you hold its maximum.\n- **Per player, per run.** Modifiers belong to whoever picked them and end with the run.\n- **Healing cap.** No healing from modifiers or food takes you above your hitpoints level. Only\n  Saradomin brews and ambrosia boost past it.\n- **Seeing them.** Your modifiers show on the buff bar above the chatbox, each with its own icon,\n  its stack count (or rank) and a tooltip. Modifiers held once show no count. The bar fits 12\n  icons (8 in fixed mode), spell buffs first. RuneLite's Timers & Buffs plugin shows some of them\n  again under the wrong names, so turn it off.",
+  "how": "- **Getting them.** Keys dropped by npcs open chests. Each chest offers three rewards, and each\n  one is independently a modifier, a piece of gear or an xp reward, so one chest can offer three\n  modifiers. Selecting a card explains it in the chatbox, and the menu's status line shows how\n  many stacks you already hold. Only key chests give modifiers: supply crates never do.\n- **Rarity and keys.** Every modifier is **common** (steady, smaller effects), **rare**\n  (build-defining) or **special** (run-defining, often with a catch). The key decides the odds:\n\n  | | Bloody key | Bloodier key |\n  |---|---|---|\n  | Drop chance (per kill) | 24% | 6% |\n  | Option is a modifier / gear / xp | 35% / 15% / 50% | 45% / 30% / 25% |\n  | Modifier is common / rare / special | 78% / 20% / 2% | 25% / 60% / 15% |\n  | XP lamp (per danger level, times your xp rate) | 2,000 xp | 5,000 xp |\n  | XP rate boost | +20x | +50x |\n\n  Gear options are always gear you can wear now. Your starter style is 6 times as likely as each\n  other style (75% vs 12.5%). Mid-tier gear (granite, obsidian, the moon sets, the barrows sets,\n  Karil's, Morrigan's, armadyl, crystal, masori, Ahrim's, Zuriel's, elder chaos and virtus) comes\n  as a **whole set**, best-in-slot gear one piece at a time. Ranged weapons come with 100 ammo.\n  XP lamps offer every combat skill, your style's first.\n- **Stacking.** Taking a modifier you already hold adds a stack. Unless stated otherwise, every\n  number below is **per stack** and adds up linearly (two stacks of Recoil reflect 20%). Most\n  specials can only be held once. Soaking and Speed demon go up to rank 3, each rank with its own\n  number. Chests stop offering a modifier once you hold its maximum, and chance based modifiers\n  (Blood fury, Echo strike, Evasion, Scavenger, Treasure hunter) stop at the stack that reaches\n  their cap, since more would do nothing.\n- **Per player, per run.** Modifiers belong to whoever picked them and end with the run.\n- **Healing cap.** No healing from modifiers or food takes you above your hitpoints level. Only\n  Saradomin brews and ambrosia boost past it.\n- **Seeing them.** Your modifiers show on the buff bar above the chatbox, each with its own icon,\n  its stack count (or rank) and a tooltip. Modifiers held once show no count. The bar fits 12\n  icons (8 in fixed mode), spell buffs first. RuneLite's Timers & Buffs plugin shows some of them\n  again under the wrong names, so turn it off.",
   "categoryIntro": {
     "How modifiers work": "",
     "Quick reference": "",
@@ -16,8 +16,8 @@
       "name": "Blood fury",
       "rarity": "Rare",
       "category": "Sustain",
-      "summary": "20% chance on melee hits to heal 30% of the damage dealt",
-      "body": "The amulet of blood fury's effect, without wearing it.\n\n- Each of your melee hits has a **20%** chance to heal you for **30%** of the damage it dealt\n  (rounded down).\n- Stacking raises the chance: 2 stacks is 40%, 5 stacks always procs. The heal amount does not\n  stack.\n- With [Draw your sword](#draw-your-sword), your ranged and magic hits count as melee hits too."
+      "summary": "20% chance on melee hits to heal 30% of the damage dealt (max 5 stacks)",
+      "body": "The amulet of blood fury's effect, without wearing it.\n\n- Each of your melee hits has a **20%** chance to heal you for **30%** of the damage it dealt\n  (rounded down).\n- Stacking raises the chance: 2 stacks is 40%, 5 stacks always procs, so it stacks up to **5**\n  times. The heal amount does not\n  stack.\n- With [Draw your sword](#draw-your-sword), your ranged and magic hits count as melee hits too."
     },
     {
       "name": "Regeneration",
@@ -65,15 +65,15 @@
       "name": "Echo strike",
       "rarity": "Rare",
       "category": "Offense",
-      "summary": "10% chance for any hit to strike again for 50%",
-      "body": "- Each hit (melee, ranged or magic) has a **10%** chance to strike again for **50%** of its\n  damage (at least 1).\n- Stacking raises the chance; 10 stacks echo every hit.\n- The echo gives combat xp like the hit it repeats, in the skills your attack style trains."
+      "summary": "10% chance for any hit to strike again for 50% (max 10 stacks)",
+      "body": "- Each hit (melee, ranged or magic) has a **10%** chance to strike again for **50%** of its\n  damage (at least 1).\n- Stacking raises the chance; 10 stacks echo every hit, so it stacks up to **10** times.\n- The echo gives combat xp like the hit it repeats, in the skills your attack style trains."
     },
     {
       "name": "Long reach",
       "rarity": "Rare",
       "category": "Offense",
       "summary": "+1 attack range per stack (up to 3), melee included",
-      "body": "- **+1 attack range** per stack, for every style: melee (so a scimitar hits from 2 tiles away),\n  ranged, magic, autocasting and spells cast on an npc directly.\n- With [Draw your sword](#draw-your-sword), ranged and magic start from its 1 tile and Long reach\n  adds to that.\n- Range never goes past 10 tiles, the most any attack can reach.\n- Stacks up to **3** times."
+      "body": "- **+1 attack range** per stack, for every style: melee (so a scimitar hits from 2 tiles away),\n  ranged, magic, autocasting and spells cast on an npc directly.\n- With [Draw your sword](#draw-your-sword), ranged and magic start from its 1 tile and Long reach\n  adds to that.\n- Range never goes past 10 tiles, the most any attack can reach.\n- It also widens the area of Dinh's bulwark's special attack by a tile each way per stack.\n- Stacks up to **3** times."
     },
     {
       "name": "Berserker",
@@ -100,8 +100,8 @@
       "name": "Evasion",
       "rarity": "Rare",
       "category": "Defence",
-      "summary": "10% chance (up to 50%) to avoid a hit completely",
-      "body": "- Each hit you take has a **10%** chance to be avoided completely, up to a maximum of **50%**\n  (5 stacks).\n- An evaded hit shows as a blocked (blue) 0."
+      "summary": "10% chance (up to 50%, 5 stacks) to avoid a hit completely",
+      "body": "- Each hit you take has a **10%** chance to be avoided completely, up to a maximum of **50%**\n  (5 stacks), so it stacks up to **5** times.\n- An evaded hit shows as a blocked (blue) 0."
     },
     {
       "name": "Devout",
@@ -122,7 +122,7 @@
       "rarity": "Common",
       "category": "Loot",
       "summary": "+10% equipment drop chance, +15% chance of a higher tier",
-      "body": "- Equipment drop chance rises by **10** percentage points (from a base of 45%).\n- The chance of equipment rolling one tier higher rises by **15** percentage points (from a base\n  of 5%). However high it gets, the 25% chance of a lower tier always remains."
+      "body": "- Equipment drop chance rises by **10** percentage points (from a base of 45%).\n- The chance of equipment rolling one tier higher rises by **15** percentage points (from a base\n  of 5%). However high it gets, the 25% chance of a lower tier always remains.\n- Chests stop offering it once another stack would raise neither chance: at **6** stacks\n  (equipment 100%, higher tier 75%), or **5** with [Bounty](#bounty) on the team, which already\n  doubles the equipment chance."
     },
     {
       "name": "Treasure hunter",
@@ -178,7 +178,7 @@
       "rarity": "Special",
       "category": "Special",
       "summary": "Take 20/30/50% (by rank) of teammates' damage for them",
-      "body": "For group runs. Solo, it has no effect.\n\n- Each hit a teammate takes is partly taken by you instead: **20%**, **30%** or **50%** of it at\n  rank 1, 2 or 3, rounded up. A hit of 3 at rank 1 puts 1 on you and 2 on your teammate.\n- The share is dealt to you as a separate hit a tick later, and your own defensive modifiers\n  apply to it. Damage you soak is never passed on again.\n- Several soakers each take their share, up to the whole hit."
+      "body": "For group runs. Solo, it has no effect.\n\n- Each hit a teammate takes is partly taken by you instead: **20%**, **30%** or **50%** of it at\n  rank 1, 2 or 3, rounded up. A hit of 3 at rank 1 puts 1 on you and 2 on your teammate.\n- The share is dealt to you as a separate hit a tick later, and your own defensive modifiers\n  apply to it. Damage you soak is never passed on again.\n- Several soakers each take their share, up to the whole hit.\n- It never saves a teammate from a hit that would kill them: a lethal hit is not soaked. (Npc hits\n  are capped to the target's hitpoints when they are queued, and the share rounds up, so otherwise\n  nobody with a soaker could die.)"
     },
     {
       "name": "Shieldbearer",
